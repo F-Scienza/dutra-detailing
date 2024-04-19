@@ -5,12 +5,12 @@ import auto4 from '../assets/auto4.png';
 
 function OtherServices() {
     return (
-			<div className="p-4 flex flex-wrap justify-evenly">
+			<div className="p-4 flex flex-wrap justify-evenly bg-white">
 				<Card
 					shadow="sm"
 					isPressable
 					onPress={() => console.log('item pressed')}
-					className="w-2/5 h-60 p-0 mb-6"
+					className=""
 				>
 					<CardFooter className="text-small justify-between p-2 text-center">
 						<b>Lavado premium</b>
@@ -37,7 +37,7 @@ function OtherServices() {
 							radius="lg"
 							alt="asd"
 							className="w-full object-cover "
-							src={auto2}
+							src={auto3}
 						/>
 					</CardBody>
 					<CardFooter className="text-small justify-between p-2 text-center">
@@ -56,7 +56,7 @@ function OtherServices() {
 							radius="lg"
 							alt="asd"
 							className="w-full object-cover "
-							src={auto2}
+							src={auto4}
 						/>
 					</CardBody>
 					<CardFooter className="text-small justify-between p-2 text-center">

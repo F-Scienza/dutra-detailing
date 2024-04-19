@@ -6,7 +6,7 @@ import { OtherServices } from './Sections/OtherServices';
 import { Services } from './Sections/Services';
 function App() {
 	return (
-		<>
+		<div className='md:flex md:flex-col md:items-center'>
 			<Header />
 			<Carousel />
 			<About />
@@ -14,7 +14,7 @@ function App() {
 			<OtherServices/>
 			<div className="text-3xl font-bold">combos</div>
 			<div className="text-3xl font-bold">footer</div>
-		</>
+		</div>
 	);
 }
 

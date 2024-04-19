@@ -28,9 +28,9 @@ function Carousel() {
 	}, []);
 
 	return (
-		<div className="top-0 w-screen h-screen relative flex justify-center items-center">
+		<div className="orbitron text-center top-0 w-screen h-screen relative flex justify-center items-center md:w-screen">
 			<img
-				className="absolute h-screen object-cover z-0 w-auto"
+				className="absolute h-screen object-cover z-0 w-auto md:w-screen md:object-cover"
 				src={background}
 				alt="bg auto"
 			/>
@@ -40,7 +40,7 @@ function Carousel() {
 				animate={{ opacity: 1 }}
 				exit={{ opacity: 0 }}
 				transition={{ duration: 1 }}
-				className="text-4xl font-semibold text-white z-10"
+				className="text-4xl md:text-6xl font-semibold md:font-bold text-white z-10"
 			>
 				{tratamientos[currentTreatmentIndex]}
 			</motion.div>
