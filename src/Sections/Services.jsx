@@ -17,6 +17,7 @@ function Services() {
 							<h4 className="font-bold text-large text-pink-600">
 								Tratamiento ceramico
 							</h4>
+							<small className="text-default-500">3 meses</small>
 						</CardHeader>
 						<CardBody className="overflow-visible py-2">
 							<Image
