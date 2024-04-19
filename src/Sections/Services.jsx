@@ -10,7 +10,7 @@ function Services() {
 			<div className="flex overflow-x-auto mb-6">
 				<Spacer x={6} />
 				<div className="flex-shrink-0">
-					<Card className="bg-black py-4">
+					<Card className="bg-black/90 py-4">
 						<CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
 							<h4 className="font-bold text-large text-pink-600">
 								Tratamiento ceramico
