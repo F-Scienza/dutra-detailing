@@ -15,7 +15,7 @@ export default function ModalButton() {
 
 	return (
 		<>
-			<Button onPress={onOpen} color="primary" className="bg-red-600 font-bold">
+			<Button onClick={onOpen}  color="primary" className="bg-red-600 font-bold">
 				Solicitar turno
 			</Button>
 			<Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="center">
