@@ -22,7 +22,7 @@ export default function ModalButton() {
 				<ModalContent>
 					{onClose => (
 						<>
-							<ModalHeader className="flex flex-col gap-1">Log in</ModalHeader>
+							<ModalHeader className="flex flex-col text-red-500 text-xl orbitron gap-1">Solicitar turno</ModalHeader>
 							<ModalBody>
 								<Input
 									autoFocus
