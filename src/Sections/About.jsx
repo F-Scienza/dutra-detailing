@@ -2,7 +2,7 @@ function About() {
 	return (
 		<div className="h-[700px] md:h-[500px] md:w-[700px] justify-center content-center p-6 text-justify md:text-balance">
 			<h1 className="orbitron mb-6 font-light text-red-600 text-center">Conocenos</h1>
-			<p>
+			<p className="md:text-lg">
 				En Dutra Detailing, nos enorgullece ofrecer el mejor servicio de
 				tratamiento vehicular en Córdoba. Con años de experiencia y dedicación,
 				hemos establecido una reputación de excelencia en el cuidado de

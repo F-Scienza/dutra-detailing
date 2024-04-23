@@ -46,8 +46,11 @@ function Services() {
 			</h1>
 			<div className="flex overflow-x-auto pb-6 md:justify-center">
 				<Spacer x={14} />
-				<div className="flex-shrink-0" onClick={() => handleOnOpen(0)}>
-					<Card className="bg-zinc-900/5 py-4">
+				<div
+					className="shadow-pink-500/20 shadow-lg hover:shadow-xl hover:shadow-pink-500/30 transition-all duration-500 rounded-2xl flex-shrink-0"
+					onClick={() => handleOnOpen(0)}
+				>
+					<Card className="bg-zinc-900/5 py-4 cursor-pointer">
 						<CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
 							<h4 className="font-bold text-large text-pink-600">
 								Tratamiento ceramico
@@ -60,14 +63,17 @@ function Services() {
 								alt="Card background"
 								className="h-80 object-cover rounded-xl"
 								src={auto2}
-								width={270}
+								width={290}
 							/>
 						</CardBody>
 					</Card>
 				</div>
-				<Spacer x={8} />
-				<div className="flex-shrink-0" onClick={() => handleOnOpen(1)}>
-					<Card className="bg-zinc-900/5 py-4">
+				<Spacer x={6} />
+				<div
+					className="shadow-pink-500/20 shadow-lg hover:shadow-xl hover:shadow-pink-500/30 transition-all duration-500  rounded-2xl flex-shrink-0"
+					onClick={() => handleOnOpen(1)}
+				>
+					<Card className="bg-zinc-900/5 py-4 cursor-pointer">
 						<CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
 							<h4 className="font-bold text-large text-pink-600">
 								Tratamiento acrilico
@@ -80,14 +86,17 @@ function Services() {
 								alt="Card background"
 								className="h-80 object-cover rounded-xl"
 								src={auto4}
-								width={270}
+								width={290}
 							/>
 						</CardBody>
 					</Card>
 				</div>
-				<Spacer x={8} />
-				<div className="flex-shrink-0" onClick={() => handleOnOpen(2)}>
-					<Card className="bg-zinc-900/5 py-4">
+				<Spacer x={6} />
+				<div
+					className="shadow-pink-500/20 shadow-lg hover:shadow-xl hover:shadow-pink-500/30 transition-all duration-500  rounded-2xl flex-shrink-0"
+					onClick={() => handleOnOpen(2)}
+				>
+					<Card className="bg-zinc-900/5 py-4 cursor-pointer">
 						<CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
 							<h4 className="font-bold text-large text-pink-600">
 								Abrillantado
@@ -100,7 +109,7 @@ function Services() {
 								alt="Card background"
 								className="h-80 object-cover rounded-xl"
 								src={auto3}
-								width={270}
+								width={290}
 							/>
 						</CardBody>
 					</Card>
