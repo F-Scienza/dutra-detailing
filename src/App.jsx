@@ -8,7 +8,7 @@ import { OtherServices } from './Sections/OtherServices';
 import { Services } from './Sections/Services';
 function App() {
 	return (
-		<div className="md:flex md:flex-col md:items-center scroll-smooth">
+		<div className="md:flex md:flex-col md:items-center">
 			<Header />
 			<Carousel />
 			<About />
