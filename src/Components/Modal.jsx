@@ -1,12 +1,8 @@
 import {
 	Modal,
 	ModalContent,
-	ModalHeader,
-	ModalBody,
-	ModalFooter,
 	Button,
 	useDisclosure,
-	Input,
 } from '@nextui-org/react';
 import { SteperModal } from './SteperModal/SteperModal';
 
@@ -15,7 +11,7 @@ export default function ModalButton() {
 
 	return (
 		<>
-			<Button onClick={onOpen} color="primary" className="bg-red-600 font-bold">
+			<Button onClick={onOpen} color="primary" className="bg-red-600 font-bold w-32 md:w-40 place-self-center">
 				Solicitar turno
 			</Button>
 			<Modal
@@ -26,34 +22,9 @@ export default function ModalButton() {
 			>
 				<ModalContent>
 					{onClose => (
-						<>
-							<SteperModal />
-							{/* <ModalHeader className="flex flex-col text-red-500 text-xl orbitron gap-1">Solicitar turno</ModalHeader>
-							<ModalBody>
-								<Input
-									autoFocus
-									label="Nombre"
-									placeholder="Ingrese su nombre y apellido"
-									variant="bordered"
-								/>
-								<Input
-									label="Contacto"
-									placeholder="Numero de telefono"
-									type="number"
-									variant="bordered"
-								/>
-								<Input
-									label="Vehiculo"
-									placeholder="Modelo de su vehiculo"
-									variant="bordered"
-								/>
-							</ModalBody>
-							<ModalFooter>
-								<Button color="primary" onPress={onClose}>
-									Continuar
-								</Button>
-							</ModalFooter> */}
-						</>
+							<SteperModal 
+								onClose={onClose}
+							/>
 					)}
 				</ModalContent>
 			</Modal>

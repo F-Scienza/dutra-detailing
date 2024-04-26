@@ -6,7 +6,7 @@ import wsp from '../assets/whatsapp.svg';
 
 function Footer() {
 	return (
-		<div className="w-screen h-80 text-center flex flex-col md:flex-row justify-center items-center md:justify-evenly">
+		<div className="w-screen h-64 text-center flex flex-col md:flex-row justify-center items-center md:justify-evenly">
 			<img className="w-52 " src={logo} alt="logo" />
 			<div className="mt-6 md:mt-0 flex flex-col items-center gap-6">
 				<div className=" flex gap-6">
@@ -50,7 +50,7 @@ function Footer() {
 						</Tooltip>
 					</a>
 				</div>
-				<p>Calle falsa 123 Córdoba</p>
+				<p>9 de julio - Alberdi - Córdoba</p>
 			</div>
 		</div>
 	);

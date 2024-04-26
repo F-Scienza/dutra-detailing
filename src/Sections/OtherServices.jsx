@@ -19,7 +19,9 @@ function OtherServices() {
 	const tratamientos = [
 		{
 			title: 'Lavado premium',
-			description: 'loremipsum',
+			description: `El lavado premium es un servicio de limpieza de vehículos que va más allá del lavado básico. `,
+			description2: `Incluye un proceso detallado de lavado que utiliza técnicas y productos de alta calidad para eliminar la suciedad y el polvo, sin generar ningún tipo de daño sobre la carrocería, las llantas y otros componentes del vehículo. `,
+			description3: `Además del lavado exterior, un lavado premium incluye limpieza y acondicionado interior así como también la aplicación de cera o selladores para proteger la pintura o mantener los selladores en caso de haber sido tratado previamente.`,
 		},
 		{
 			title: 'Pulido de opticas',
@@ -27,7 +29,9 @@ function OtherServices() {
 		},
 		{
 			title: 'Limpieza de interior',
-			description: 'loremipsum',
+			description: `El servicio de limpieza interior implica la eliminación meticulosa de suciedad, polvo, manchas y olores del interior del automóvil. `,
+			description2: `Esto incluye aspirar y cepillar a fondo las superficies, como alfombras, tapicería, paneles de puertas y salpicaderos, para eliminar la suciedad y los residuos. Además, se utilizan productos específicos para limpiar y desinfectar las superficies, eliminando manchas y olores no deseados.`,
+			description3: `Por último, aplicamos un acondicionador para proteger y revitalizar la tapicería y los materiales interiores, dejando el interior del vehículo limpio, fresco y como nuevo.`,
 		},
 		{
 			title: 'Limpieza de motor',
@@ -130,6 +134,8 @@ function OtherServices() {
 								</ModalHeader>
 								<ModalBody>
 									<p>{modalInfo.description}</p>
+									<p>{modalInfo.description2} </p>
+									<p>{modalInfo.description3} </p>
 								</ModalBody>
 								<ModalFooter>
 									<Button color="primary" onPress={onClose}>

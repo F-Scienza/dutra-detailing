@@ -9,7 +9,7 @@ import ModalButton from '../Components/Modal';
 
 function Header() {
 	return (
-		<Navbar shouldHideOnScroll className="bg-transparent-0 w-screen">
+		<Navbar shouldHideOnScroll className="bg-transparent-0 w-11/12">
 			<NavbarBrand justify="start">
 				<img className="h-12 w-auto" src={logo} alt="dutra detailing" />
 			</NavbarBrand>

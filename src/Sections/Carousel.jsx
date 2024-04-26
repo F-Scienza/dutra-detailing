@@ -30,7 +30,7 @@ function Carousel() {
 	return (
 		<div className="orbitron text-center top-0 w-screen h-screen relative flex justify-center items-center md:w-screen">
 			<img
-				className="absolute h-screen object-cover z-0 w-auto md:w-screen md:object-cover"
+				className="absolute h-screen object-cover z-0 w-auto md:w-screen md:object-cover top-0"
 				src={background}
 				alt="bg auto"
 			/>
