@@ -8,7 +8,7 @@
 	@apply w-10 h-10 flex items-center justify-center z-10 relative bg-slate-900 rounded-full font-semibold text-white;
 }
 .active .step {
-	@apply bg-pink-500;
+	@apply bg-red-600;
 }
 .complete .step {
 	@apply bg-red-600;

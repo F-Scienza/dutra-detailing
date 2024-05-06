@@ -8,7 +8,7 @@ import { SteperModal } from './SteperModal/SteperModal';
 
 export default function ModalButton() {
 	const { isOpen, onOpen, onOpenChange } = useDisclosure();
-
+	
 	return (
 		<>
 			<Button onClick={onOpen} color="primary" className="bg-red-600 font-bold w-32 md:w-40 place-self-center">

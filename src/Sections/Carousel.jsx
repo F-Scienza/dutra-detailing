@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import background from '../assets/auto.jpg';
+import deskBG from '../assets/inicio_desk.jpg';
+import mobileBG from '../assets/inicio_mobile.jpeg';
 
 function Carousel() {
 	const tratamientos = [
@@ -28,11 +29,17 @@ function Carousel() {
 	}, []);
 
 	return (
-		<div className="orbitron text-center top-0 w-screen h-screen relative flex justify-center items-center md:w-screen">
+		<div className="orbitron text-center top-[-2rem] w-full h-[95vh] relative flex justify-center items-center overflow-hidden ">
+			<div className="w-screen h-screen absolute bg-gradient-to-t from-black/60 via-black/5 to-black/0 z-10" ></div>
 			<img
-				className="absolute h-screen object-cover z-0 w-auto md:w-screen md:object-cover top-0"
-				src={background}
-				alt="bg auto"
+				className=" hidden md:block absolute h-screen object-cover z-0 w-auto md:w-screen md:object-cover "
+				src={deskBG}
+				alt="estetica vehicular auto"
+			/>
+			<img
+				className="block md:hidden absolute h-screen object-cover z-0 w-auto md:w-screen md:object-cover"
+				src={mobileBG}
+				alt="estetica vehicular auto"
 			/>
 			<motion.div
 				key={currentTreatmentIndex}
@@ -40,7 +47,7 @@ function Carousel() {
 				animate={{ opacity: 1 }}
 				exit={{ opacity: 0 }}
 				transition={{ duration: 1 }}
-				className="text-4xl md:text-6xl font-semibold md:font-bold text-white z-10"
+				className="top-[-3rem] text-4xl md:text-6xl font-semibold md:font-bold text-white z-20"
 			>
 				{tratamientos[currentTreatmentIndex]}
 			</motion.div>

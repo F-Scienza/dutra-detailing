@@ -11,11 +11,10 @@ import {
 	ModalBody,
 	ModalFooter,
 	useDisclosure,
-	Button,
 } from '@nextui-org/react';
-import auto2 from '../assets/auto2.png';
-import auto3 from '../assets/auto3.png';
-import auto4 from '../assets/auto4.png';
+import abrillantado from '../assets/abrillantado.jpg';
+import ceramico from '../assets/tratceramico.jpg';
+import acrilico from '../assets/tratacrilico.jpg';
 
 function Services() {
 	const tratamientos = [
@@ -46,7 +45,7 @@ function Services() {
 	};
 
 	return (
-		<div className="text-justify bg-white md:w-screen ">
+		<div className="text-justify bg-white md:w-screen">
 			<h1 className="orbitron text-center pt-12 mb-6 font-light text-red-600">
 				Servicios
 			</h1>
@@ -61,14 +60,14 @@ function Services() {
 							<h4 className="font-bold text-large text-pink-600">
 								Tratamiento ceramico
 							</h4>
-							<small className="text-default-500">3 meses</small>
+							<small className="text-default-500">Hasta 3 años</small>
 						</CardHeader>
 						<CardBody className="overflow-visible py-2">
 							<Image
 								isZoomed
-								alt="Card background"
+								alt="Tratamiento ceramico"
 								className="h-80 object-cover rounded-xl"
-								src={auto2}
+								src={ceramico}
 								width={290}
 							/>
 						</CardBody>
@@ -84,14 +83,14 @@ function Services() {
 							<h4 className="font-bold text-large text-pink-600">
 								Tratamiento acrilico
 							</h4>
-							<small className="text-default-500">3 meses</small>
+							<small className="text-default-500">6 meses</small>
 						</CardHeader>
 						<CardBody className="overflow-visible py-2">
 							<Image
 								isZoomed
-								alt="Card background"
+								alt="Tratamiento acrilico"
 								className="h-80 object-cover rounded-xl"
-								src={auto4}
+								src={acrilico}
 								width={290}
 							/>
 						</CardBody>
@@ -112,9 +111,9 @@ function Services() {
 						<CardBody className="overflow-visible py-2">
 							<Image
 								isZoomed
-								alt="Card background"
+								alt="Abrillantado Pulido"
 								className="h-80 object-cover rounded-xl"
-								src={auto3}
+								src={abrillantado}
 								width={290}
 							/>
 						</CardBody>
@@ -128,25 +127,18 @@ function Services() {
 				isKeyboardDismissDisabled={true}
 				placement="center"
 				backdrop="blur"
+				hideCloseButton
 			>
 				<ModalContent className="text-black">
-					{onClose => (
-						<>
-							<ModalHeader className="flex flex-col gap-1 orbitron text-red-500 text-2xl">
-								{modalInfo.title}
-							</ModalHeader>
-							<ModalBody>
-								<p>{modalInfo.description}</p>
-								<p>{modalInfo.description2} </p>
-								<p>{modalInfo.description3} </p>
-							</ModalBody>
-							<ModalFooter>
-								<Button color="primary" onPress={onClose}>
-									Action
-								</Button>
-							</ModalFooter>
-						</>
-					)}
+					<ModalHeader className="flex flex-col gap-1 orbitron text-red-500 text-2xl">
+						{modalInfo.title}
+					</ModalHeader>
+					<ModalBody>
+						<p>{modalInfo.description}</p>
+						<p>{modalInfo.description2} </p>
+						<p>{modalInfo.description3} </p>
+					</ModalBody>
+					<ModalFooter></ModalFooter>
 				</ModalContent>
 			</Modal>
 		</div>

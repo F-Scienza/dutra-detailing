@@ -8,11 +8,17 @@ import { DateStep } from './DateStep';
 import { MessageStep } from './MessageStep';
 
 function SteperModal() {
-	const steps = ['Ingrese sus datos', 'Servicios', 'Rango de fechas', "Mensaje adicional"];
+	const steps = [
+		'Ingrese sus datos',
+		'Servicios',
+		'Rango de fechas',
+		'Mensaje adicional',
+	];
 	const [currentStep, setCurrentStep] = useState(1);
 	const [complete, setComplete] = useState(false);
+	
 	return (
-		<div className='flex flex-col p-2'>
+		<div className="flex flex-col p-2">
 			<div className="flex justify-between w-100">
 				{steps?.map((step, i) => (
 					<div
@@ -36,11 +42,9 @@ function SteperModal() {
 				<ServicesStep />
 			) : currentStep == 3 ? (
 				<DateStep />
-			) : (
-				currentStep == 4 ? (
-					<MessageStep/>
-				):null
-			)}
+			) : currentStep == 4 ? (
+				<MessageStep />
+			) : null}
 			{!complete && (
 				<button
 					className="btn w-24 place-self-end mr-6 mt-6"

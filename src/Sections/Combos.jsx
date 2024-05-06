@@ -1,15 +1,15 @@
 import { Chip } from '@nextui-org/react';
-import carforsale from '../assets/redcar.png';
+import combo from '../assets/combo.jpg';
 function Combos() {
 	return (
-		<div className="md:w-screen flex flex-col justify-center items-center h-[820px] rounded-xl ">
-			<div className="items-center w-11/12 sm:w-[620px] lg:w-[980px] h-[670px] rounded-xl relative  cursor-pointer">
+		<div className="md:w-screen flex flex-col justify-center items-center h-auto rounded-xl py-8 md:py-16">
+			<div className="items-center w-11/12 sm:w-[620px] lg:w-[980px] h-[670px]  rounded-xl relative  cursor-pointer">
 				<img
-					className="h-[670px] sm:w-full object-cover absolute right-0 sm:inset-0 bottom-0 z-0 rounded-xl opacity-80 shadow-gradient"
-					src={carforsale}
+					className="h-[670px]  sm:w-full object-cover absolute right-0 sm:inset-0 bottom-0 z-0 rounded-xl opacity-80 shadow-gradient"
+					src={combo}
 					alt="carforsale"
 				/>
-				<div className="relative h-full w-full rounded-xl bg-gradient-to-t from-black/80 flex items-center md:rounded-xl">
+				<div className="relative h-full w-full rounded-xl bg-gradient-to-t from-black/50 to-black/5 flex items-center md:rounded-xl">
 					<div className="absolute z-10 flex flex-col sm:w-full">
 						<h1 className="orbitron text-4xl md:text-5xl lg:text-6xl text-center mb-4 md:mb-6">
 							Prepara tu vehiculo

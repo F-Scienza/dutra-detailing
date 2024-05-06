@@ -16,7 +16,6 @@ function App() {
 			<Services />
 			<OtherServices />
 			<Combos/>
-			<ModalButton />
 			<Footer />
 		</div>
 	);
