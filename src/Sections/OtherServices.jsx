@@ -50,7 +50,7 @@ function OtherServices() {
 	};
 
 	return (
-		<div className="h-auto md:w-screen pb-16 bg-white">
+		<div className="h-auto md:w-screen pb-16 ">
 			<h1 className="text-4xl orbitron text-center pt-12 mb-6 font-light text-red-600">
 				Otros servicios
 			</h1>
@@ -102,7 +102,7 @@ function OtherServices() {
 						</CardHeader>
 						<Image
 							alt="Limpieza de interior"
-							className="blur-[2px] z-0 w-full h-full object-cover "
+							className="z-0 w-full h-full object-cover "
 							src={interior}
 						/>
 					</Card>

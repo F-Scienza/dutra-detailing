@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ModalHeader } from '@nextui-org/react';
+import { ModalHeader, ModalFooter, Button } from '@nextui-org/react';
 import { TiTick } from 'react-icons/ti';
 import './Steper.css';
 import { ClientStep } from './ClientStep';
@@ -11,12 +11,12 @@ function SteperModal() {
 	const steps = [
 		'Ingrese sus datos',
 		'Servicios',
-		'Rango de fechas',
+		'Rango de fechas para el turno',
 		'Mensaje adicional',
 	];
 	const [currentStep, setCurrentStep] = useState(1);
 	const [complete, setComplete] = useState(false);
-	
+
 	return (
 		<div className="flex flex-col p-2">
 			<div className="flex justify-between w-100">
@@ -45,18 +45,38 @@ function SteperModal() {
 			) : currentStep == 4 ? (
 				<MessageStep />
 			) : null}
-			{!complete && (
-				<button
-					className="btn w-24 place-self-end mr-6 mt-6"
-					onClick={() => {
-						currentStep === steps.length
-							? setComplete(true)
-							: setCurrentStep(prev => prev + 1);
-					}}
-				>
-					{currentStep === steps.length ? 'Finish' : 'Next'}
-				</button>
-			)}
+			<ModalFooter className="justify-between">
+				{currentStep > 1 ? (
+					<Button
+						className="bg-red-500 text-white font-bold w-24 place-self-start ml-6 mt-6"
+						onClick={() => {
+							setCurrentStep(prev => prev - 1);
+						}}
+					>
+						Anterior
+					</Button>
+				) : (
+					<Button
+						isDisabled
+						className="bg-red-500 text-white font-bold w-24 place-self-start ml-6 mt-6"
+					>
+						Anterior
+					</Button>
+				)}
+
+				{!complete && (
+					<Button
+						className="bg-red-500 text-white font-bold w-24 place-self-end mr-6 mt-6"
+						onClick={() => {
+							currentStep === steps.length
+								? setComplete(true)
+								: setCurrentStep(prev => prev + 1);
+						}}
+					>
+						{currentStep === steps.length ? 'Enviar' : 'Siguiente'}
+					</Button>
+				)}
+			</ModalFooter>
 		</div>
 	);
 }

@@ -21,8 +21,8 @@ function Services() {
 		{
 			title: 'Tratamiento ceramico',
 			description: `El tratamiento cerámico es uno de los mejores servicios que brindamos.`,
-			description2: ` Consiste en realizar una corrección de barniz full en donde eliminaremos hasta un 90% de imperfecciones. Aquí no solo mejora el nivel de corrección sino también mejora notablemente la protección, siendo ésta una capa líquida de recubrimiento de sílice sobre la pintura, lo cual protegerá a la misma de manchas, corrosión y daños causados por los rayos UV.`,
-			description3: ` Ésta protección puede variar su duración entre 1, 2 y hasta 3 años dependiendo el sellador que elija el cliente. Cualquiera de éstas protecciones además de proteger a la pintura mejora el brillo y la profundidad del color dejando un acabado en su máximo nivel de brillo.`,
+			description2: `Consiste en realizar una corrección de barniz full en donde eliminaremos hasta un 90% de imperfecciones. Aquí no solo mejora el nivel de corrección sino también mejora notablemente la protección, siendo ésta una capa líquida de recubrimiento de sílice sobre la pintura, lo cual protegerá a la misma de manchas, corrosión y daños causados por los rayos UV.`,
+			description3: `Ésta protección puede variar su duración entre 1, 2 y hasta 3 años dependiendo el sellador que elija el cliente. Cualquiera de éstas protecciones además de proteger a la pintura mejora el brillo y la profundidad del color dejando un acabado en su máximo nivel de brillo.`,
 		},
 		{
 			title: 'Tratamiento acrilico',
@@ -45,14 +45,14 @@ function Services() {
 	};
 
 	return (
-		<div className="text-justify bg-white md:w-screen">
+		<div className="text-justify md:w-screen">
 			<h1 className="orbitron text-center pt-12 mb-6 font-light text-red-600">
 				Servicios
 			</h1>
 			<div className="flex overflow-x-auto pb-6 md:justify-center">
 				<Spacer x={14} />
 				<div
-					className="shadow-pink-500/20 shadow-lg hover:shadow-xl hover:shadow-pink-500/30 transition-all duration-500 rounded-2xl flex-shrink-0"
+					className="shadow-white/20 shadow-lg hover:shadow-xl hover:shadow-white/30 transition-all duration-500 rounded-2xl flex-shrink-0"
 					onClick={() => handleOnOpen(0)}
 				>
 					<Card className="bg-zinc-900/5 py-4 cursor-pointer">
@@ -75,7 +75,7 @@ function Services() {
 				</div>
 				<Spacer x={6} />
 				<div
-					className="shadow-pink-500/20 shadow-lg hover:shadow-xl hover:shadow-pink-500/30 transition-all duration-500  rounded-2xl flex-shrink-0"
+					className="shadow-white/20 shadow-lg hover:shadow-xl hover:shadow-white/30 transition-all duration-500 rounded-2xl flex-shrink-0"
 					onClick={() => handleOnOpen(1)}
 				>
 					<Card className="bg-zinc-900/5 py-4 cursor-pointer">
@@ -98,7 +98,7 @@ function Services() {
 				</div>
 				<Spacer x={6} />
 				<div
-					className="shadow-pink-500/20 shadow-lg hover:shadow-xl hover:shadow-pink-500/30 transition-all duration-500  rounded-2xl flex-shrink-0"
+					className="shadow-white/20 shadow-lg hover:shadow-xl hover:shadow-white/30 transition-all duration-500 rounded-2xl flex-shrink-0"
 					onClick={() => handleOnOpen(2)}
 				>
 					<Card className="bg-zinc-900/5 py-4 cursor-pointer">
