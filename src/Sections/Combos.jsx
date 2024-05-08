@@ -5,7 +5,7 @@ function Combos() {
 		<div className="md:w-screen flex flex-col justify-center items-center h-auto rounded-xl py-8 md:py-16">
 			<div className="items-center w-11/12 sm:w-[620px] lg:w-[980px] h-[670px]  rounded-xl relative  cursor-pointer">
 				<img
-					className="h-[670px]  sm:w-full object-cover absolute right-0 sm:inset-0 bottom-0 z-0 rounded-xl opacity-80 shadow-gradient"
+					className="h-full  sm:w-full object-cover absolute right-0 sm:inset-0 bottom-0 z-0 rounded-xl opacity-80 shadow-gradient"
 					src={combo}
 					alt="carforsale"
 				/>

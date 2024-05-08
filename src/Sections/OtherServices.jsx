@@ -8,6 +8,7 @@ import {
 	ModalBody,
 	ModalFooter,
 	useDisclosure,
+	Button,
 } from '@nextui-org/react';
 import lavado from '../assets/lav_premium.jpg';
 import interior from '../assets/limp_interior.jpg';
@@ -42,7 +43,7 @@ function OtherServices() {
 			description3: `Este trabajo se realiza con sumo cuidado y utilizando los productos y herramientas adecuados para evitar dañar los componentes del motor o causar problemas eléctricos. `,
 		},
 	];
-	const { isOpen, onOpen, onOpenChange } = useDisclosure();
+	const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
 	const [modalInfo, setModalInfo] = useState('');
 	const handleOnOpen = tratamiento => {
 		onOpen();
@@ -141,7 +142,11 @@ function OtherServices() {
 							<p>{modalInfo.description2} </p>
 							<p>{modalInfo.description3} </p>
 						</ModalBody>
-						<ModalFooter></ModalFooter>
+						<ModalFooter>
+							<Button color="danger" variant="light" onClick={onClose}>
+								Cerrar
+							</Button>
+						</ModalFooter>
 					</ModalContent>
 				</Modal>
 			</div>

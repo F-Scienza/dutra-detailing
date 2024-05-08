@@ -11,10 +11,10 @@ function App() {
 		<div className="h-auto flex flex-col md:items-center bg-gradient-to-br from-zinc-900 via-neutral-800 to-zinc-900">
 			<Header />
 			<Carousel />
-			<About />
+			<Combos />
 			<Services />
 			<OtherServices />
-			<Combos />
+			<About />
 			<Footer />
 		</div>
 	);

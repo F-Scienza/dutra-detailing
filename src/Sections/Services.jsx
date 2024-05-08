@@ -11,6 +11,7 @@ import {
 	ModalBody,
 	ModalFooter,
 	useDisclosure,
+	Button,
 } from '@nextui-org/react';
 import abrillantado from '../assets/abrillantado.jpg';
 import ceramico from '../assets/tratceramico.jpg';
@@ -37,7 +38,7 @@ function Services() {
 			description3: `Este trabajo finaliza con la aplicación de una cera, lo que le dará al vehículo un plus de brillo y otorgará suavidad a la superficie. `,
 		},
 	];
-	const { isOpen, onOpen, onOpenChange } = useDisclosure();
+	const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
 	const [modalInfo, setModalInfo] = useState('');
 	const handleOnOpen = tratamiento => {
 		onOpen();
@@ -136,7 +137,11 @@ function Services() {
 						<p>{modalInfo.description2} </p>
 						<p>{modalInfo.description3} </p>
 					</ModalBody>
-					<ModalFooter></ModalFooter>
+					<ModalFooter>
+						<Button color="danger" variant="light" onClick={onClose}>
+							Cerrar
+						</Button>
+					</ModalFooter>
 				</ModalContent>
 			</Modal>
 		</div>

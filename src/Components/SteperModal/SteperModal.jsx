@@ -7,8 +7,11 @@ import { ServicesStep } from './ServicesStep';
 import { DateStep } from './DateStep';
 import { MessageStep } from './MessageStep';
 import { CompleteStep } from './CompleteStep';
+import { useFormData } from '../StepFormContext';
 
 function SteperModal() {
+	const { formdata } = useFormData();
+
 	const steps = [
 		'Ingrese sus datos',
 		'Servicios',
@@ -45,13 +48,13 @@ function SteperModal() {
 			{complete ? (
 				<CompleteStep />
 			) : currentStep == 1 ? (
-				<ClientStep />
+				<ClientStep formdata={formdata} />
 			) : currentStep == 2 ? (
-				<ServicesStep />
+				<ServicesStep formdata={formdata} />
 			) : currentStep == 3 ? (
-				<DateStep />
+				<DateStep formdata={formdata} />
 			) : currentStep == 4 ? (
-				<MessageStep />
+				<MessageStep formdata={formdata} />
 			) : null}
 
 			<ModalFooter className={` justify-between `}>

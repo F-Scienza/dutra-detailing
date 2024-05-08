@@ -1,14 +1,29 @@
-import { ModalBody, Textarea } from "@nextui-org/react";
+import { ModalBody, Textarea } from '@nextui-org/react';
+import { useFormData } from '../StepFormContext';
+import { useState } from 'react';
 
 function MessageStep() {
-    return (
-			<ModalBody>
-				<Textarea
-					placeholder="Dejanos la consulta que te haya surgido"
-					className="max-w-xs"
-				/>
-			</ModalBody>
-		);
+	const { formData, updateFormData } = useFormData();
+
+	const [textValue, setTextValue] = useState(formData.message);
+
+	const handleChange = value => {
+		setTextValue(value)
+		updateFormData('message', value);
+	};
+
+	return (
+		<ModalBody>
+			<Textarea
+				size="lg"
+				variant="underlined"
+				labelPlacement="outside"
+				placeholder="Dejanos un mensaje o duda que te haya surgido."
+				value={textValue}
+				onValueChange={handleChange}
+			/>
+		</ModalBody>
+	);
 }
 
-export {MessageStep};
+export { MessageStep };
