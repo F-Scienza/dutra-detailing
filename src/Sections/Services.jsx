@@ -52,15 +52,15 @@ function Services() {
 			<div className="flex overflow-x-auto pb-6 md:justify-center">
 				<Spacer x={14} />
 				<div
-					className="shadow-white/20 shadow-lg hover:shadow-xl hover:shadow-white/30 transition-all duration-500 rounded-2xl flex-shrink-0"
+					className="shadow-white/10 shadow-lg hover:shadow-xl hover:shadow-white/20 transition-all duration-500 rounded-2xl flex-shrink-0"
 					onClick={() => handleOnOpen(0)}
 				>
-					<Card className="bg-zinc-900/5 py-4 cursor-pointer">
+					<Card className="bg-white/10 py-4 cursor-pointer">
 						<CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-							<h4 className="font-bold text-large text-pink-600">
+							<h4 className="font-bold text-large text-white">
 								Tratamiento ceramico
 							</h4>
-							<small className="text-default-500">Hasta 3 años</small>
+							<small className="font-bold text-pink-600">Hasta 3 años</small>
 						</CardHeader>
 						<CardBody className="overflow-visible py-2">
 							<Image
@@ -75,15 +75,15 @@ function Services() {
 				</div>
 				<Spacer x={6} />
 				<div
-					className="shadow-white/20 shadow-lg hover:shadow-xl hover:shadow-white/30 transition-all duration-500 rounded-2xl flex-shrink-0"
+					className="shadow-white/10 shadow-lg hover:shadow-xl hover:shadow-white/20 transition-all duration-500 rounded-2xl flex-shrink-0"
 					onClick={() => handleOnOpen(1)}
 				>
-					<Card className="bg-zinc-900/5 py-4 cursor-pointer">
+					<Card className="bg-white/10 py-4 cursor-pointer">
 						<CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-							<h4 className="font-bold text-large text-pink-600">
+							<h4 className="font-bold text-large text-white">
 								Tratamiento acrilico
 							</h4>
-							<small className="text-default-500">6 meses</small>
+							<small className="font-bold text-pink-600">6 meses</small>
 						</CardHeader>
 						<CardBody className="overflow-visible py-2">
 							<Image
@@ -98,15 +98,13 @@ function Services() {
 				</div>
 				<Spacer x={6} />
 				<div
-					className="shadow-white/20 shadow-lg hover:shadow-xl hover:shadow-white/30 transition-all duration-500 rounded-2xl flex-shrink-0"
+					className="shadow-white/10 shadow-lg hover:shadow-xl hover:shadow-white/20 transition-all duration-500 rounded-2xl flex-shrink-0"
 					onClick={() => handleOnOpen(2)}
 				>
-					<Card className="bg-zinc-900/5 py-4 cursor-pointer">
+					<Card className="bg-white/10 py-4 cursor-pointer">
 						<CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-							<h4 className="font-bold text-large text-pink-600">
-								Abrillantado
-							</h4>
-							<small className="text-default-500">3 meses</small>
+							<h4 className="font-bold text-large text-white">Abrillantado</h4>
+							<small className="font-bold text-pink-600">3 meses</small>
 						</CardHeader>
 						<CardBody className="overflow-visible py-2">
 							<Image

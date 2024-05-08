@@ -29,10 +29,10 @@ function Carousel() {
 	}, []);
 
 	return (
-		<div className="orbitron text-center top-[-2rem] w-full h-[95vh] relative flex justify-center items-center overflow-hidden ">
-			<div className="w-screen h-screen absolute bg-gradient-to-t from-gray-900/80 via-black/5 to-black/0 z-10" ></div>
+		<div className="orbitron text-center top-[-2rem] w-full h-[85vh] md:h-[95vh] relative flex justify-center items-center overflow-hidden ">
+			<div className="w-screen h-screen absolute bg-gradient-to-t from-gray-900/80 via-black/5 to-black/0 z-10"></div>
 			<img
-				className=" hidden md:block absolute h-screen object-cover z-0 w-auto md:w-screen md:object-cover "
+				className="hidden md:block absolute h-screen object-cover z-0 w-auto md:w-screen md:object-cover "
 				src={deskBG}
 				alt="estetica vehicular auto"
 			/>

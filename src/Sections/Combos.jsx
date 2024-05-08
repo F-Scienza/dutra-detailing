@@ -22,7 +22,7 @@ function Combos() {
 								color="danger"
 								variant="shadow"
 							>
-								Lavado premium
+								Abrillantado
 							</Chip>
 							<Chip
 								className="md:text-lg orbitron bg-red-700/85"

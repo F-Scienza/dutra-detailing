@@ -6,6 +6,7 @@ import { ClientStep } from './ClientStep';
 import { ServicesStep } from './ServicesStep';
 import { DateStep } from './DateStep';
 import { MessageStep } from './MessageStep';
+import { CompleteStep } from './CompleteStep';
 
 function SteperModal() {
 	const steps = [
@@ -14,8 +15,10 @@ function SteperModal() {
 		'Rango de fechas para el turno',
 		'Mensaje adicional',
 	];
+
 	const [currentStep, setCurrentStep] = useState(1);
 	const [complete, setComplete] = useState(false);
+	const [visibilityButtons, setVisibilityButtons] = useState('block');
 
 	return (
 		<div className="flex flex-col p-2">
@@ -33,10 +36,15 @@ function SteperModal() {
 					</div>
 				))}
 			</div>
-			<ModalHeader className="flex flex-col text-red-500 text-xl orbitron gap-1">
+			<ModalHeader
+				className={`flex flex-col text-red-500 text-xl orbitron gap-1 ${visibilityButtons} `}
+			>
 				{steps[currentStep - 1]}
 			</ModalHeader>
-			{currentStep == 1 ? (
+
+			{complete ? (
+				<CompleteStep />
+			) : currentStep == 1 ? (
 				<ClientStep />
 			) : currentStep == 2 ? (
 				<ServicesStep />
@@ -45,12 +53,14 @@ function SteperModal() {
 			) : currentStep == 4 ? (
 				<MessageStep />
 			) : null}
-			<ModalFooter className="justify-between">
+
+			<ModalFooter className={` justify-between `}>
 				{currentStep > 1 ? (
 					<Button
-						className="bg-red-500 text-white font-bold w-24 place-self-start ml-6 mt-6"
+						className={`${visibilityButtons} bg-red-500 text-white font-bold w-24 place-self-end mr-6 mt-6`}
 						onClick={() => {
 							setCurrentStep(prev => prev - 1);
+							setComplete(false);
 						}}
 					>
 						Anterior
@@ -64,16 +74,20 @@ function SteperModal() {
 					</Button>
 				)}
 
-				{!complete && (
+				{!complete && ( // si no esta completo pasa lo siguiente
 					<Button
-						className="bg-red-500 text-white font-bold w-24 place-self-end mr-6 mt-6"
+						className={`${visibilityButtons} bg-red-500 text-white font-bold w-24 place-self-end mr-6 mt-6`}
 						onClick={() => {
-							currentStep === steps.length
-								? setComplete(true)
-								: setCurrentStep(prev => prev + 1);
+							currentStep === steps.length // si es igual a la cantidad de pasos
+								? (setComplete(true), setVisibilityButtons('hidden')) // si se apritea se setea como completo
+								: setCurrentStep(prev => prev + 1); // si no es igual aumenta uno
 						}}
 					>
-						{currentStep === steps.length ? 'Enviar' : 'Siguiente'}
+						{
+							currentStep === steps.length
+								? 'Enviar' // si es igual dice enviar
+								: 'Siguiente' // si no es igual dice siguiente
+						}
 					</Button>
 				)}
 			</ModalFooter>
