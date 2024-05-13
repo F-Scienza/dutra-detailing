@@ -20,28 +20,28 @@ function Combos() {
 						</h1>
 						<div className="flex flex-wrap justify-center items-center w-100 gap-1 ">
 							<Chip
-								className="md:text-lg orbitron bg-red-700/85"
+								className="md:text-lg orbitron bg-red-700 shadow-none"
 								color="danger"
 								variant="shadow"
 							>
 								Abrillantado
 							</Chip>
 							<Chip
-								className="md:text-lg orbitron bg-red-700/85"
+								className="md:text-lg orbitron bg-red-700 shadow-none"
 								color="danger"
 								variant="shadow"
 							>
 								Limpieza de interior
 							</Chip>
 							<Chip
-								className="md:text-lg orbitron bg-red-700/85"
+								className="md:text-lg orbitron bg-red-700 shadow-none"
 								color="danger"
 								variant="shadow"
 							>
 								Limpieza de motor
 							</Chip>
 						</div>
-						<div className='mt-24 place-self-center '>
+						<div className="mt-24 place-self-center ">
 							<ModalButton />
 						</div>
 					</div>
