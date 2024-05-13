@@ -13,6 +13,7 @@ function CompleteStep() {
 			</ModalHeader>
 			<ModalBody className="flex w-full text-black text-xl">
 				<p>Recibimos tu solicitud con éxito. Pronto te daremos novedades.</p>
+				<p className='text-sm text-gray-600'>Si no ves nuestro mensaje en tu correo, revisa la sección de spam.</p>
 			</ModalBody>
 			<ModalFooter className="flex text-lg text-black items-center">
 				<p>Nuestras redes: </p>

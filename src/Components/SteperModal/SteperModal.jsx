@@ -10,7 +10,7 @@ import { CompleteStep } from './CompleteStep';
 import { useFormData } from '../StepFormContext';
 
 function SteperModal() {
-	const { formdata } = useFormData();
+	const { formData, sendEmail } = useFormData();
 
 	const steps = [
 		'Ingrese sus datos',
@@ -22,6 +22,26 @@ function SteperModal() {
 	const [currentStep, setCurrentStep] = useState(1);
 	const [complete, setComplete] = useState(false);
 	const [visibilityButtons, setVisibilityButtons] = useState('block');
+	const [load, setLoad] = useState();
+	const [btnText, setBtnText] = useState('enviar');
+
+	const handleSendEmail = () => {
+		console.log(`send email con ${formData}`);
+		setLoad(true);
+		setBtnText('');
+		sendEmail(formData)
+			.then(() => {
+				setComplete(true);
+				setLoad(false);
+				setVisibilityButtons('hidden');
+			})
+			.catch(error => {
+				// Manejar cualquier error que ocurra durante el envío del correo electrónico
+				console.error('Error al enviar el correo electrónico:', error);
+				setLoad(false);
+				setBtnText('error');
+			});
+	};
 
 	return (
 		<div className="flex flex-col p-2">
@@ -48,13 +68,13 @@ function SteperModal() {
 			{complete ? (
 				<CompleteStep />
 			) : currentStep == 1 ? (
-				<ClientStep formdata={formdata} />
+				<ClientStep formData={formData} />
 			) : currentStep == 2 ? (
-				<ServicesStep formdata={formdata} />
+				<ServicesStep formData={formData} />
 			) : currentStep == 3 ? (
-				<DateStep formdata={formdata} />
+				<DateStep formData={formData} />
 			) : currentStep == 4 ? (
-				<MessageStep formdata={formdata} />
+				<MessageStep formData={formData} />
 			) : null}
 
 			<ModalFooter className={` justify-between `}>
@@ -79,16 +99,17 @@ function SteperModal() {
 
 				{!complete && ( // si no esta completo pasa lo siguiente
 					<Button
+						isLoading={load}
 						className={`${visibilityButtons} bg-red-500 text-white font-bold w-24 place-self-end mr-6 mt-6`}
 						onClick={() => {
 							currentStep === steps.length // si es igual a la cantidad de pasos
-								? (setComplete(true), setVisibilityButtons('hidden')) // si se apritea se setea como completo
+								? handleSendEmail(formData) // si se apritea se setea como completo
 								: setCurrentStep(prev => prev + 1); // si no es igual aumenta uno
 						}}
 					>
 						{
 							currentStep === steps.length
-								? 'Enviar' // si es igual dice enviar
+								? btnText // si es igual dice eso
 								: 'Siguiente' // si no es igual dice siguiente
 						}
 					</Button>

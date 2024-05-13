@@ -29,9 +29,20 @@ function ClientStep() {
 				type="number"
 				variant="bordered"
 				className="appearance-none text-black font-semibold"
-				name="contact"
+				name="phone"
 				onChange={handleChange}
-				value={formData.contact}
+				value={formData.phone}
+			/>
+			<Input
+				isRequired
+				label="Correo electronico"
+				placeholder="Email"
+				type="text"
+				variant="bordered"
+				className="appearance-none text-black font-semibold"
+				name="email"
+				onChange={handleChange}
+				value={formData.email}
 			/>
 			<Input
 				isRequired
