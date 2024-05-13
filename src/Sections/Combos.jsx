@@ -1,5 +1,7 @@
 import { Chip } from '@nextui-org/react';
 import combo from '../assets/combo.jpg';
+import ModalButton from '../Components/Modal';
+
 function Combos() {
 	return (
 		<div className="md:w-screen flex flex-col justify-center items-center h-auto rounded-xl py-8 md:py-16">
@@ -38,6 +40,9 @@ function Combos() {
 							>
 								Limpieza de motor
 							</Chip>
+						</div>
+						<div className='mt-24 place-self-center '>
+							<ModalButton />
 						</div>
 					</div>
 				</div>

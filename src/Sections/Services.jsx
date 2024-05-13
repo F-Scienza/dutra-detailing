@@ -51,7 +51,7 @@ function Services() {
 				Servicios
 			</h1>
 			<div className="flex overflow-x-auto pb-6 md:justify-center">
-				<Spacer x={14} />
+				<Spacer x={4} />
 				<div
 					className="shadow-white/10 shadow-lg hover:shadow-xl hover:shadow-white/20 transition-all duration-500 rounded-2xl flex-shrink-0"
 					onClick={() => handleOnOpen(0)}
@@ -118,7 +118,7 @@ function Services() {
 						</CardBody>
 					</Card>
 				</div>
-				<Spacer x={14} />
+				<Spacer x={4} />
 			</div>
 			<Modal
 				isOpen={isOpen}

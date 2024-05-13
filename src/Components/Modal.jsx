@@ -9,7 +9,7 @@ export default function ModalButton() {
 			<Button
 				onClick={onOpen}
 				color="primary"
-				className="bg-red-600 font-bold w-32 md:w-40 place-self-center"
+				className="bg-red-600/90 font-bold w-32 md:w-40 place-self-center "
 			>
 				Solicitar turno
 			</Button>
