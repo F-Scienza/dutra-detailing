@@ -59,7 +59,7 @@ function Services() {
 					<Card className="bg-white/10 py-4 cursor-pointer">
 						<CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
 							<h4 className="font-bold text-large text-white">
-								Tratamiento ceramico
+								Tratamiento cerámico
 							</h4>
 							<small className="font-bold text-pink-600">Hasta 3 años</small>
 						</CardHeader>
@@ -82,7 +82,7 @@ function Services() {
 					<Card className="bg-white/10 py-4 cursor-pointer">
 						<CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
 							<h4 className="font-bold text-large text-white">
-								Tratamiento acrilico
+								Tratamiento acrílico
 							</h4>
 							<small className="font-bold text-pink-600">6 meses</small>
 						</CardHeader>

@@ -115,7 +115,7 @@ function OtherServices() {
 					<Card className="h-[100px] md:h-[150px] w-11/12 md:w-[450px] lg:w-[500px] flex justify-center content-center mb-6 cursor-pointer">
 						<CardHeader className="absolute z-10 flex justify-center">
 							<h4 className="text-center orbitron text-white text-3xl">
-								Pulido de opticas
+								Pulido de ópticas
 							</h4>
 						</CardHeader>
 						<Image

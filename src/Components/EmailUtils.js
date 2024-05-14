@@ -1,6 +1,6 @@
 import emailjs from '@emailjs/browser';
-const EMAIL_SERVICE_ID = 'service_i0xvz0e';
-//const EMAIL_SERVICE_ID = 'service_aruc97e'; // Reemplaza con tu ID de servicio
+// const EMAIL_SERVICE_ID = 'service_i0xvz0e';
+const EMAIL_SERVICE_ID = 'service_aruc97e'; // Reemplaza con tu ID de servicio
 const EMAIL_TEMPLATE_ID = 'template_6oj20bs'; // Reemplaza con tu ID de plantilla
 const EMAIL_USER_ID = 'lXboeEWSVlZxUCYmA'; // Reemplaza con tu ID de usuario
 

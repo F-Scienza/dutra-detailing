@@ -30,7 +30,7 @@ function Footer() {
 					>
 						<Tooltip
 							content={
-								<div className="text-black text-small font-bold">facebook</div>
+								<div className="text-black text-small font-bold">Facebook</div>
 							}
 						>
 							<img className="w-6 h-6" src={fb} alt="Facebook" />
@@ -43,7 +43,7 @@ function Footer() {
 					>
 						<Tooltip
 							content={
-								<div className="text-black text-small font-bold">whatsapp</div>
+								<div className="text-black text-small font-bold">WhatsApp</div>
 							}
 						>
 							<img className="w-6 h-6" src={wsp} alt="whatsapp" />
@@ -51,7 +51,7 @@ function Footer() {
 					</a>
 				</div>
 				<div className='flex justify-center items-center gap-2'>
-					<FaLocationDot  />
+					<FaLocationDot  className='text-red-500'/>
 					<p >9 de Julio 2675 - Alto Alberdi</p>
 				</div>
 			</div>

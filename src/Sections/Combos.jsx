@@ -14,7 +14,7 @@ function Combos() {
 				<div className="relative h-full w-full rounded-xl bg-gradient-to-t from-black/50 to-black/5 flex items-center md:rounded-xl">
 					<div className="absolute z-10 flex flex-col sm:w-full">
 						<h1 className="orbitron text-4xl md:text-5xl lg:text-6xl text-center mb-4 md:mb-6">
-							Prepara tu vehiculo
+							Prepara tu vehículo
 							<br />
 							para la venta
 						</h1>

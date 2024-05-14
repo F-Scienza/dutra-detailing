@@ -23,7 +23,7 @@ function SteperModal() {
 	const [complete, setComplete] = useState(false);
 	const [visibilityButtons, setVisibilityButtons] = useState('block');
 	const [load, setLoad] = useState();
-	const [btnText, setBtnText] = useState('enviar');
+	const [btnText, setBtnText] = useState('Enviar');
 
 	const handleSendEmail = () => {
 		console.log(`send email con ${formData}`);
