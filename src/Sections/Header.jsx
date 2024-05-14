@@ -11,7 +11,7 @@ function Header() {
 	return (
 		<Navbar shouldHideOnScroll className="bg-transparent-0 w-full">
 			<NavbarBrand justify="start">
-				<img className="h-12 w-auto" src={logo} alt="dutra detailing" />
+				<img className="h-12 " src={logo} alt="dutra detailing car detail" />
 			</NavbarBrand>
 			<NavbarContent justify="end">
 				<NavbarItem>

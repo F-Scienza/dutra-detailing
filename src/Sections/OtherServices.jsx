@@ -62,9 +62,9 @@ function OtherServices() {
 				>
 					<Card className="h-[100px] md:h-[150px] w-11/12 md:w-[450px] lg:w-[500px] flex justify-center content-center mb-6 cursor-pointer">
 						<CardHeader className="absolute z-10 flex justify-center">
-							<h4 className="text-center orbitron text-white text-3xl ">
+							<h1 className="text-center orbitron text-white text-3xl ">
 								Lavado premium
-							</h4>
+							</h1>
 						</CardHeader>
 						<Image
 							alt="Lavado premium"
@@ -79,9 +79,9 @@ function OtherServices() {
 				>
 					<Card className="h-[100px] md:h-[150px] w-11/12 md:w-[450px] lg:w-[500px] flex justify-center content-center mb-6 cursor-pointer">
 						<CardHeader className="absolute z-10 flex justify-center">
-							<h4 className="text-center orbitron text-white text-3xl">
+							<h1 className="text-center orbitron text-white text-3xl">
 								Limpieza de motor
-							</h4>
+							</h1>
 						</CardHeader>
 						<Image
 							alt="Limpieza de motor"
@@ -97,9 +97,9 @@ function OtherServices() {
 				>
 					<Card className="h-[100px] md:h-[150px] w-11/12 md:w-[450px] lg:w-[500px] flex justify-center content-center mb-6 cursor-pointer">
 						<CardHeader className="absolute z-10 flex justify-center">
-							<h4 className="text-center orbitron text-white text-3xl">
+							<h1 className="text-center orbitron text-white text-3xl">
 								Limpieza de interior
-							</h4>
+							</h1>
 						</CardHeader>
 						<Image
 							alt="Limpieza de interior"
@@ -114,9 +114,9 @@ function OtherServices() {
 				>
 					<Card className="h-[100px] md:h-[150px] w-11/12 md:w-[450px] lg:w-[500px] flex justify-center content-center mb-6 cursor-pointer">
 						<CardHeader className="absolute z-10 flex justify-center">
-							<h4 className="text-center orbitron text-white text-3xl">
+							<h1 className="text-center orbitron text-white text-3xl">
 								Pulido de ópticas
-							</h4>
+							</h1>
 						</CardHeader>
 						<Image
 							alt="Pulido de opticas"

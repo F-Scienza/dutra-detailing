@@ -5,6 +5,7 @@ import mobileBG from '../assets/inicio_mobile.jpeg';
 
 function Carousel() {
 	const tratamientos = [
+		'Car detail',
 		'Lavado Premium',
 		'Tratamiento acrílico',
 		'Tratamiento cerámico',
@@ -34,12 +35,12 @@ function Carousel() {
 			<img
 				className="hidden md:block absolute h-screen object-cover z-0 w-auto md:w-screen md:object-cover "
 				src={deskBG}
-				alt="estetica vehicular auto"
+				alt="estetica vehicular"
 			/>
 			<img
 				className="block md:hidden absolute h-screen object-cover z-0 w-auto md:w-screen md:object-cover"
 				src={mobileBG}
-				alt="estetica vehicular auto"
+				alt="Car detail"
 			/>
 			<motion.div
 				key={currentTreatmentIndex}
