@@ -13,9 +13,9 @@ import {
 	useDisclosure,
 	Button,
 } from '@nextui-org/react';
-import abrillantado from '../assets/abrillantado.jpg';
-import ceramico from '../assets/tratceramico.jpg';
-import acrilico from '../assets/tratacrilico.jpg';
+// import abrillantado from '../assets/abrillantado.jpg';
+// import ceramico from '../assets/tratceramico.jpg';
+// import acrilico from '../assets/tratacrilico.jpg';
 
 function Services() {
 	const tratamientos = [
@@ -68,7 +68,7 @@ function Services() {
 								isZoomed
 								alt="Tratamiento ceramico"
 								className="h-80 object-cover rounded-xl"
-								src={ceramico}
+								src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/tratceramico.webp?alt=media&token=99a1fe39-40e8-460b-bd26-2818ba58c99c"
 								width={290}
 							/>
 						</CardBody>
@@ -91,7 +91,7 @@ function Services() {
 								isZoomed
 								alt="Tratamiento acrilico"
 								className="h-80 object-cover rounded-xl"
-								src={acrilico}
+								src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/tratacrilico.webp?alt=media&token=89ed9bff-a0df-4e9c-a268-da1ba32674bb"
 								width={290}
 							/>
 						</CardBody>
@@ -112,7 +112,7 @@ function Services() {
 								isZoomed
 								alt="Abrillantado Pulido"
 								className="h-80 object-cover rounded-xl"
-								src={abrillantado}
+								src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/abrillantado.webp?alt=media&token=6b6037c3-61bf-4af4-8fb5-de451903c456"
 								width={290}
 							/>
 						</CardBody>
@@ -148,4 +148,4 @@ function Services() {
 	);
 }
 
-export { Services };
+export default  Services ;

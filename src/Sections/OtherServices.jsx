@@ -10,10 +10,10 @@ import {
 	useDisclosure,
 	Button,
 } from '@nextui-org/react';
-import lavado from '../assets/lav_premium.jpg';
-import interior from '../assets/limp_interior.jpg';
-import opticas from '../assets/limp_opticas.jpg';
-import motor from '../assets/limp_motor.jpg';
+// import lavado from '../assets/lav_premium.jpg';
+// import interior from '../assets/limp_interior.jpg';
+// import opticas from '../assets/limp_opticas.jpg';
+// import motor from '../assets/limp_motor.jpg';
 import { useState } from 'react';
 
 function OtherServices() {
@@ -69,7 +69,7 @@ function OtherServices() {
 						<Image
 							alt="Lavado premium"
 							className=" z-0 w-full h-full object-cover "
-							src={lavado}
+							src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/lavadopremium.webp?alt=media&token=becb8bc0-0d3b-4cf6-83d2-c1be8a6d0143"
 						/>
 					</Card>
 				</div>
@@ -86,7 +86,7 @@ function OtherServices() {
 						<Image
 							alt="Limpieza de motor"
 							className=" z-0 w-screen  object-cover "
-							src={motor}
+							src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/limp_motor.webp?alt=media&token=f481d080-6d45-487a-bb6d-ee5a387e3eba"
 						/>
 					</Card>
 				</div>
@@ -104,7 +104,7 @@ function OtherServices() {
 						<Image
 							alt="Limpieza de interior"
 							className="z-0 w-full h-full object-cover "
-							src={interior}
+							src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/limp_interior.webp?alt=media&token=c3c82eb2-4e09-4a8a-955b-e4811040d729"
 						/>
 					</Card>
 				</div>
@@ -121,7 +121,7 @@ function OtherServices() {
 						<Image
 							alt="Pulido de opticas"
 							className=" z-0 w-screen h-full object-cover "
-							src={opticas}
+							src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/limp_opticas.webp?alt=media&token=fda3bc3b-fe6e-45b3-949f-9c791f509487"
 						/>
 					</Card>
 				</div>
@@ -154,4 +154,4 @@ function OtherServices() {
 	);
 }
 
-export { OtherServices };
+export default OtherServices ;

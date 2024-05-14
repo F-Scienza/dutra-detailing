@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import deskBG from '../assets/inicio_desk.jpg';
-import mobileBG from '../assets/inicio_mobile.jpeg';
+import { Image } from '@nextui-org/react';
+// import deskBG from '../assets/inicio_desk.jpg';
+// import mobileBG from '../assets/inicio_mobile.jpeg';
 
 function Carousel() {
 	const tratamientos = [
@@ -26,22 +27,25 @@ function Carousel() {
 		}, 2000); // Cambia de frase cada 2 segundos
 
 		return () => clearInterval(intervalId);
-	// eslint-disable-next-line react-hooks/exhaustive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (
 		<div className="orbitron text-center top-[-2rem] w-full h-[85vh] md:h-[95vh] relative flex justify-center items-center overflow-hidden ">
 			<div className="w-screen h-screen absolute bg-gradient-to-t from-gray-900/80 via-black/5 to-black/0 z-10"></div>
-			<img
-				className="hidden md:block absolute h-screen object-cover z-0 w-auto md:w-screen md:object-cover "
-				src={deskBG}
-				alt="estetica vehicular"
-			/>
-			<img
-				className="block md:hidden absolute h-screen object-cover z-0 w-auto md:w-screen md:object-cover"
-				src={mobileBG}
-				alt="Car detail"
-			/>
+			<div className="absolute h-auto w-auto">
+				<Image
+					className="hidden sm:block h-screen w-auto  object-cover z-0 md:w-screen md:object-cover "
+					src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/inicio_desk.webp?alt=media&token=cffa3610-ad6f-4b5f-9704-7c81bd4586f7"
+					alt="estetica vehicular"
+				/>
+				<Image
+					loading="lazy"
+					className="block sm:hidden  h-screen object-cover z-0 w-screen md:w-screen md:object-cover"
+					src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/inicio_mobile.webp?alt=media&token=17d32bbd-068d-4aeb-bbbc-21e8e346218c"
+					alt="Car detail"
+				/>
+			</div>
 			<motion.div
 				key={currentTreatmentIndex}
 				initial={{ opacity: 0 }}
@@ -56,4 +60,4 @@ function Carousel() {
 	);
 }
 
-export { Carousel };
+export default Carousel;
