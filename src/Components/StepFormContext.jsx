@@ -11,7 +11,7 @@ export const FormDataProvider = ({ children }) => {
 		email: '',
 		phone: '',
 		vehicle: '',
-		services: '',
+		services: [],
 		parsedDates: '',
 		dates: '',
 		message: '',

@@ -19,6 +19,7 @@ export default function ModalButton() {
 				onOpenChange={onOpenChange}
 				placement="center"
 				hideCloseButton
+				className='w-11/12'
 			>
 				<ModalContent>
 					{onClose => (

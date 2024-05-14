@@ -4,7 +4,7 @@ import { useFormData } from '../StepFormContext';
 function ServicesStep() {
 	const { formData, updateFormData } = useFormData();
 	const handleCheckboxGroupChange = values => {
-		updateFormData('services', (formData.services = values));
+		updateFormData('services', values);
 	};
 
 	return (

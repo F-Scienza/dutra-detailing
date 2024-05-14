@@ -1,8 +1,8 @@
 function About() {
 	return (
-		<div className="md:w-[740px] lg:w-[940px] justify-center content-center p-12 pb-16 text-justify md:text-center">
+		<div className="w-10/12 md:w-[740px]  lg:w-[940px] self-center justify-center content-center pb-16 text-justify md:text-center">
 			<h1 className="orbitron mb-6 font-light text-red-600 text-center">
-				Conocenos
+				Nosotros
 			</h1>
 			<p className="mb-2 md:text-lg">
 				En Dutra Detailing nos dedicamos a la estética vehicular desde 2017,
@@ -24,7 +24,7 @@ function About() {
 				En Dutra Detailing valoramos la privacidad de nuestros clientes, por eso
 				nuestro local está ubicado en un espacio cerrado donde trabajamos a
 				puertas cerradas. Si buscas un lugar donde puedas confiar en la calidad
-				y la discreción, este es tu lugar! 
+				y la discreción, este es tu lugar!
 			</p>
 		</div>
 	);
