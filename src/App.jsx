@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import './App.css';
+import LazyLoading from './Components/LazyLoading';
 // import { Header } from './Sections/Header';
 // import { Carousel } from './Sections/Carousel';
 // import { Combos } from './Sections/Combos';
@@ -27,7 +28,7 @@ const LazyFooter = React.lazy(() => import('./Sections/Footer'));
 function App() {
 	return (
 		<div className="h-auto flex flex-col md:items-center ">
-			<Suspense fallback={<div>Loading...</div>}>
+			<Suspense fallback={<LazyLoading/>}>
 				<LazyHeader />
 				<LazyCarousel />
 				<LazyCombos />

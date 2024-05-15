@@ -61,7 +61,7 @@ function Services() {
 							<h4 className="font-bold text-large text-white">
 								Tratamiento cerámico
 							</h4>
-							<small className="font-bold text-pink-600">Hasta 3 años</small>
+							<small className="font-bold text-pink-500">Hasta 3 años</small>
 						</CardHeader>
 						<CardBody className="overflow-visible py-2">
 							<Image
@@ -84,7 +84,7 @@ function Services() {
 							<h4 className="font-bold text-large text-white">
 								Tratamiento acrílico
 							</h4>
-							<small className="font-bold text-pink-600">6 meses</small>
+							<small className="font-bold text-pink-500">6 meses</small>
 						</CardHeader>
 						<CardBody className="overflow-visible py-2">
 							<Image
@@ -105,7 +105,7 @@ function Services() {
 					<Card className="bg-white/10 py-4 cursor-pointer">
 						<CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
 							<h4 className="font-bold text-large text-white">Abrillantado</h4>
-							<small className="font-bold text-pink-600">3 meses</small>
+							<small className="font-bold text-pink-500">3 meses</small>
 						</CardHeader>
 						<CardBody className="overflow-visible py-2">
 							<Image

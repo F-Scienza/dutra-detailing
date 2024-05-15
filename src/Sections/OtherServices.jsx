@@ -85,7 +85,7 @@ function OtherServices() {
 						</CardHeader>
 						<Image
 							alt="Limpieza de motor"
-							className=" z-0 w-screen  object-cover "
+							className=" z-0 w-screen h-full object-cover "
 							src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/limp_motor.webp?alt=media&token=f481d080-6d45-487a-bb6d-ee5a387e3eba"
 						/>
 					</Card>
