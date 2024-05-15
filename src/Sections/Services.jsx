@@ -13,9 +13,6 @@ import {
 	useDisclosure,
 	Button,
 } from '@nextui-org/react';
-// import abrillantado from '../assets/abrillantado.jpg';
-// import ceramico from '../assets/tratceramico.jpg';
-// import acrilico from '../assets/tratacrilico.jpg';
 
 function Services() {
 	const tratamientos = [

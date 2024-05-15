@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Image, Skeleton } from '@nextui-org/react';
-// import deskBG from '../assets/inicio_desk.jpg';
-// import mobileBG from '../assets/inicio_mobile.jpeg';
 
 function Carousel() {
 	const tratamientos = [

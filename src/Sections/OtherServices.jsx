@@ -10,10 +10,6 @@ import {
 	useDisclosure,
 	Button,
 } from '@nextui-org/react';
-// import lavado from '../assets/lav_premium.jpg';
-// import interior from '../assets/limp_interior.jpg';
-// import opticas from '../assets/limp_opticas.jpg';
-// import motor from '../assets/limp_motor.jpg';
 import { useState } from 'react';
 
 function OtherServices() {

@@ -1,5 +1,4 @@
 import { Chip } from '@nextui-org/react';
-// import combo from '../assets/combo.jpg';
 import ModalButton from '../Components/Modal';
 
 function Combos() {
