@@ -77,43 +77,49 @@ function SteperModal() {
 				<MessageStep formData={formData} />
 			) : null}
 
-			<ModalFooter className={` justify-between `}>
-				{currentStep > 1 ? (
-					<Button
-						className={`${visibilityButtons} bg-red-500 text-white font-bold w-24 place-self-end mr-6 mt-6`}
-						onClick={() => {
-							setCurrentStep(prev => prev - 1);
-							setComplete(false);
-						}}
-					>
-						Anterior
-					</Button>
-				) : (
-					<Button
-						isDisabled
-						className="bg-red-500 text-white font-bold w-24 place-self-start ml-6 mt-6"
-					>
-						Anterior
-					</Button>
-				)}
+			<ModalFooter className="flex flex-col gap-1">
+				
+				<p className="text-center text-sm text-black/80 font-light mb-2">
+					Todos los turnos se reservan con seña, sin excepcion.
+				</p>
+				<div className="flex justify-between ">
+					{currentStep > 1 ? (
+						<Button
+							className={`${visibilityButtons} bg-red-500 text-white font-bold w-24 place-self-end  `}
+							onClick={() => {
+								setCurrentStep(prev => prev - 1);
+								setComplete(false);
+							}}
+						>
+							Anterior
+						</Button>
+					) : (
+						<Button
+							isDisabled
+							className="bg-red-500 text-white font-bold w-24 place-self-start "
+						>
+							Anterior
+						</Button>
+					)}
 
-				{!complete && ( // si no esta completo pasa lo siguiente
-					<Button
-						isLoading={load}
-						className={`${visibilityButtons} bg-red-500 text-white font-bold w-24 place-self-end mr-6 mt-6`}
-						onClick={() => {
-							currentStep === steps.length // si es igual a la cantidad de pasos
-								? handleSendEmail(formData) // si se apritea se setea como completo
-								: setCurrentStep(prev => prev + 1); // si no es igual aumenta uno
-						}}
-					>
-						{
-							currentStep === steps.length
-								? btnText // si es igual dice eso
-								: 'Siguiente' // si no es igual dice siguiente
-						}
-					</Button>
-				)}
+					{!complete && ( // si no esta completo pasa lo siguiente
+						<Button
+							isLoading={load}
+							className={`${visibilityButtons} bg-red-500 text-white font-bold w-24 place-self-end  `}
+							onClick={() => {
+								currentStep === steps.length // si es igual a la cantidad de pasos
+									? handleSendEmail(formData) // si se apritea se setea como completo
+									: setCurrentStep(prev => prev + 1); // si no es igual aumenta uno
+							}}
+						>
+							{
+								currentStep === steps.length
+									? btnText // si es igual dice eso
+									: 'Siguiente' // si no es igual dice siguiente
+							}
+						</Button>
+					)}
+				</div>
 			</ModalFooter>
 		</div>
 	);

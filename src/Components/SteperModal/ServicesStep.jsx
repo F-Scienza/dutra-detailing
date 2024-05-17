@@ -15,20 +15,20 @@ function ServicesStep() {
 				value={formData.services}
 				onValueChange={handleCheckboxGroupChange} // Función que maneja los cambios
 			>
-				<Checkbox value={`- Tratamiento Ceramico`}>
+				<Checkbox value={` - Tratamiento Ceramico`}>
 					Tratamiento Cerámico
 				</Checkbox>
-				<Checkbox value={`- Abrillantado `}>Abrillantado</Checkbox>
-				<Checkbox value={`- Tratamiento Acrilico `}>
+				<Checkbox value={` - Abrillantado`}>Abrillantado</Checkbox>
+				<Checkbox value={` - Tratamiento Acrilico`}>
 					Tratamiento Acrílico
 				</Checkbox>
-				<Checkbox value={`- Lavado premium `}>Lavado premium</Checkbox>
-				<Checkbox value={`- Limpieza de interior `}>
+				<Checkbox value={` - Lavado premium`}>Lavado premium</Checkbox>
+				<Checkbox value={` - Limpieza de interior`}>
 					Limpieza de interior
 				</Checkbox>
-				<Checkbox value={`- Limpieza de motor `}>Limpieza de motor</Checkbox>
-				<Checkbox value={`- Pulido de opticas `}>Pulido de ópticas</Checkbox>
-				<Checkbox value={`- Preparacion para la venta `}>
+				<Checkbox value={` - Limpieza de motor`}>Limpieza de motor</Checkbox>
+				<Checkbox value={` - Pulido de opticas`}>Pulido de ópticas</Checkbox>
+				<Checkbox value={` - Preparacion para la venta`}>
 					Preparacion para la venta
 				</Checkbox>
 			</CheckboxGroup>
