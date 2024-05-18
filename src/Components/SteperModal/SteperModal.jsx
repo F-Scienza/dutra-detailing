@@ -25,6 +25,7 @@ function SteperModal() {
 	const [load, setLoad] = useState();
 	const [btnText, setBtnText] = useState('Enviar');
 
+
 	const handleSendEmail = () => {
 		console.log(`send email con ${formData}`);
 		setLoad(true);

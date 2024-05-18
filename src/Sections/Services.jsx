@@ -12,6 +12,7 @@ import {
 	ModalFooter,
 	useDisclosure,
 	Button,
+	Divider,
 } from '@nextui-org/react';
 
 function Services() {
@@ -21,18 +22,21 @@ function Services() {
 			description: `El tratamiento cerámico es uno de los mejores servicios que brindamos.`,
 			description2: `Consiste en realizar una corrección de barniz full en donde eliminaremos hasta un 90% de imperfecciones. Aquí no solo mejora el nivel de corrección sino también mejora notablemente la protección, siendo ésta una capa líquida de recubrimiento de sílice sobre la pintura, lo cual protegerá a la misma de manchas, corrosión y daños causados por los rayos UV.`,
 			description3: `Ésta protección puede variar su duración entre 1, 2 y hasta 3 años dependiendo el sellador que elija el cliente. Cualquiera de éstas protecciones además de proteger a la pintura mejora el brillo y la profundidad del color dejando un acabado en su máximo nivel de brillo.`,
+			price: '$190.000',
 		},
 		{
 			title: 'Tratamiento acrilico',
 			description: `En éste tratamiento realizamos una corrección de barniz intermedia en donde eliminamos entre un 50/60% de rayas circulares (las famosas telarañas que se ven con la luz del sol). `,
 			description2: `Ésto da como resultado una muy buena terminación y ayuda a incrementar el brillo notablemente. `,
 			description3: `Una vez terminada la corrección de barniz aplicaremos la protección, que proporciona una barrera protectora contra la suciedad, los rayos UV y aporta un plus de brillo, todo esto por hasta 6 meses.`,
+			price: '$125.000',
 		},
 		{
 			title: 'Abrillantado',
 			description: `Este servicio es un proceso que incluye un pulido leve. `,
 			description2: `Eliminamos defectos superficiales y así incrementar el brillo del vehículo sin necesidad de realizar un trabajo profundo. `,
 			description3: `Este trabajo finaliza con la aplicación de una cera, lo que le dará al vehículo un plus de brillo y otorgará suavidad a la superficie. `,
+			price: '$68.000',
 		},
 	];
 	const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
@@ -58,7 +62,7 @@ function Services() {
 							<h4 className="font-bold text-large text-white">
 								Tratamiento cerámico
 							</h4>
-							<small className="font-bold text-pink-500">Hasta 3 años</small>
+							<small className="font-bold text-pink-500">Hasta 1 años</small>
 						</CardHeader>
 						<CardBody className="overflow-visible py-2">
 							<Image
@@ -133,6 +137,17 @@ function Services() {
 						<p>{modalInfo.description}</p>
 						<p>{modalInfo.description2} </p>
 						<p>{modalInfo.description3} </p>
+						<Divider className="my-2" />
+						<div className='flex flex-col'>
+							<p className="text-xs self-center opacity-90">Desde:</p>
+							<p className="self-center text-red-500 orbitron">
+								{modalInfo.price}
+							</p>
+						</div>
+						<p className="text-sm self-center">
+							{' '}
+							El costo del servicio varia segun el tamaño del vehiculo.
+						</p>
 					</ModalBody>
 					<ModalFooter>
 						<Button color="danger" variant="light" onClick={onClose}>
@@ -145,4 +160,4 @@ function Services() {
 	);
 }
 
-export default  Services ;
+export default Services;

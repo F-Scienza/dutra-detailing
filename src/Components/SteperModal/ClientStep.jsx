@@ -8,7 +8,7 @@ function ClientStep() {
 		const {name, value} = e.target
 		updateFormData(name,value)
 	};
-
+	
 	return (
 		<ModalBody>
 			<Input
