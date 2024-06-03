@@ -126,7 +126,7 @@ function OtherServices() {
 						/>
 					</Card>
 				</div>
-				<div className="flex justify-center md:place-self-start hover:scale-[1.01] transition-all duration-400">
+				<div className="flex justify-center md:place-self-end hover:scale-[1.01] transition-all duration-400">
 					<Card className="h-[100px] md:h-[150px] w-11/12 md:w-[450px] lg:w-[500px] flex justify-center content-center mb-6 cursor-pointer">
 						<CardHeader className="absolute z-10 flex justify-center">
 							<h1 className="text-center orbitron text-white text-3xl">
