@@ -34,7 +34,7 @@ function OtherServices() {
 			description: `El servicio de limpieza interior implica la eliminación meticulosa de suciedad, polvo, manchas y olores del interior del automóvil. `,
 			description2: `Esto incluye aspirar y cepillar a fondo las superficies, como alfombras, tapicería, paneles de puertas y salpicaderos, para eliminar la suciedad y los residuos. Además, se utilizan productos específicos para limpiar y desinfectar las superficies, eliminando manchas y olores no deseados.`,
 			description3: `Por último, aplicamos un acondicionador para proteger y revitalizar la tapicería y los materiales interiores, dejando el interior del vehículo limpio, fresco y como nuevo.`,
-			price: '$40.000',
+			price: '$50.000',
 		},
 		{
 			title: 'Limpieza de motor',
@@ -123,6 +123,34 @@ function OtherServices() {
 							alt="Pulido de opticas"
 							className=" z-0 w-screen h-full object-cover "
 							src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/limp_opticas.webp?alt=media&token=fda3bc3b-fe6e-45b3-949f-9c791f509487"
+						/>
+					</Card>
+				</div>
+				<div className="flex justify-center md:place-self-start hover:scale-[1.01] transition-all duration-400">
+					<Card className="h-[100px] md:h-[150px] w-11/12 md:w-[450px] lg:w-[500px] flex justify-center content-center mb-6 cursor-pointer">
+						<CardHeader className="absolute z-10 flex justify-center">
+							<h1 className="text-center orbitron text-white text-3xl">
+								Polarizado
+							</h1>
+						</CardHeader>
+						<Image
+							alt="Polarizado"
+							className=" z-0 w-screen h-full object-cover "
+							src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/polarizado.webp?alt=media&token=b009426a-8242-4dfb-98cf-d08edec3810b"
+						/>
+					</Card>
+				</div>
+				<div className="flex justify-center md:place-self-start hover:scale-[1.01] transition-all duration-400">
+					<Card className="h-[100px] md:h-[150px] w-11/12 md:w-[450px] lg:w-[500px] flex justify-center content-center mb-6 cursor-pointer">
+						<CardHeader className="absolute z-10 flex justify-center">
+							<h1 className="text-center orbitron text-white text-3xl">
+								Microbollos
+							</h1>
+						</CardHeader>
+						<Image
+							alt="Microbollos"
+							className=" z-0 w-screen h-full object-cover "
+							src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/microbollos.webp?alt=media&token=7dac5fc8-a5dc-4b8b-8015-08e01e42d8d1"
 						/>
 					</Card>
 				</div>
