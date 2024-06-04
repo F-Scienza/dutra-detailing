@@ -20,7 +20,7 @@ function ServicesStep() {
 				</Checkbox>
 				<Checkbox value={` - Abrillantado`}>Abrillantado</Checkbox>
 				<Checkbox value={` - Tratamiento Acrilico`}>
-					Tratamiento Acrílico
+					Tratamiento Acrílico <span className='font-semibold text-red-500'> -15% </span>
 				</Checkbox>
 				<Checkbox value={` - Lavado premium`}>Lavado premium</Checkbox>
 				<Checkbox value={` - Limpieza de interior`}>
@@ -30,6 +30,9 @@ function ServicesStep() {
 				<Checkbox value={` - Pulido de opticas`}>Pulido de ópticas</Checkbox>
 				<Checkbox value={` - Preparacion para la venta`}>
 					Preparacion para la venta
+				</Checkbox>
+				<Checkbox value={` - Otros`}>
+					Otros
 				</Checkbox>
 			</CheckboxGroup>
 		</ModalBody>

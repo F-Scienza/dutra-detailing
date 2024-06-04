@@ -11,12 +11,8 @@ function Combos() {
 					alt="carforsale"
 				/>
 				<div className="relative h-full w-full rounded-xl bg-gradient-to-t from-black/50 to-black/5 flex items-center md:rounded-xl">
-					<div className="absolute z-10 flex flex-col sm:w-full">
-						<h1 className="orbitron text-4xl md:text-5xl lg:text-6xl text-center mb-4 md:mb-6">
-							Tratamiento acrílico
-						</h1>
-						<div className="flex flex-wrap justify-center items-center w-100 gap-1 ">
-							
+					<div className="absolute z-10 flex flex-col w-full">
+						<div className="flex flex-wrap justify-center items-center w-100 gap-1 pb-4">
 							<Chip
 								className="md:text-lg orbitron bg-white text-red-500 font-bold shadow-none"
 								color="danger"
@@ -25,6 +21,18 @@ function Combos() {
 								Oferta de junio
 							</Chip>
 						</div>
+						<h1 className="orbitron text-4xl md:text-5xl lg:text-6xl text-center mb-4 md:mb-6">
+							Tratamiento acrílico
+						</h1>
+						<div className="w-full bg-black/70 mt-8 text-center">
+							<p className="text-white orbitron pt-2">
+								Promoción por tiempo limitado
+							</p>
+							<p className="text-white orbitron pb-4">
+								Exclusivamente solicitando desde la web
+							</p>
+						</div>
+
 						<div className="mt-24 place-self-center ">
 							<ModalButton />
 						</div>
