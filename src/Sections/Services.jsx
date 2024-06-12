@@ -48,8 +48,8 @@ function Services() {
 
 	return (
 		<div className="text-justify md:w-screen">
-			<h1 className="orbitron text-center pt-12 mb-6 font-light text-red-600">
-				Servicios
+			<h1 className="text-4xl orbitron text-center pt-12 mb-6 font-light text-red-600">
+				Servicios de pulido
 			</h1>
 			<div className="flex overflow-x-auto pb-6 md:justify-center">
 				<Spacer x={4} />
@@ -138,7 +138,7 @@ function Services() {
 						<p>{modalInfo.description2} </p>
 						<p>{modalInfo.description3} </p>
 						<Divider className="my-2" />
-						<div className='flex flex-col'>
+						<div className="flex flex-col">
 							<p className="text-xs self-center opacity-90">Desde:</p>
 							<p className="self-center text-red-500 orbitron">
 								{modalInfo.price}
