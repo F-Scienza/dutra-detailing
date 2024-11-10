@@ -41,7 +41,7 @@ function OtherServices() {
 			description: `La limpieza del motor es un proceso que implica eliminar la suciedad, el polvo, los residuos de aceite y otros desechos acumulados en el compartimiento del motor de un vehículo.`,
 			description2: `Este proceso no solo mejora la apariencia del motor, sino que también puede contribuir a su rendimiento y durabilidad a largo plazo. `,
 			description3: `Este trabajo se realiza con sumo cuidado y utilizando los productos y herramientas adecuados para evitar dañar los componentes del motor o causar problemas eléctricos. `,
-			price: '$9.000',
+			price: '$15.000',
 		},
 	];
 	const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
