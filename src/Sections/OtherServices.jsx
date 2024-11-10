@@ -20,21 +20,21 @@ function OtherServices() {
 			description: `El lavado premium es un servicio de limpieza de vehículos que va más allá del lavado básico. `,
 			description2: `Incluye un proceso detallado de lavado que utiliza técnicas y productos de alta calidad para eliminar la suciedad y el polvo, sin generar ningún tipo de daño sobre la carrocería, las llantas y otros componentes del vehículo. `,
 			description3: `Además del lavado exterior, un lavado premium incluye limpieza y acondicionado interior así como también la aplicación de cera o selladores para proteger la pintura o mantener los selladores en caso de haber sido tratado previamente.`,
-			price: '$10.000',
+			price: '$12.000',
 		},
 		{
 			title: 'Pulido de opticas',
 			description: ` Con el tiempo, los faros pueden volverse opacos, amarillentos o nublados por la exposición a los elementos, los rayos UV del sol y el desgaste general.`,
 			description2: `Esto no solo afecta la estética del automóvil, sino que también puede reducir la efectividad de los faros al dispersar la luz de manera desigual.`,
 			description3: `El pulido de ópticas aparte de mejorar la apariencia del vehículo, también mejora la seguridad al mejorar la visibilidad nocturna al conducir.`,
-			price: '$12.000 c/u',
+			price: '$16.000 c/u',
 		},
 		{
 			title: 'Limpieza de interior',
 			description: `El servicio de limpieza interior implica la eliminación meticulosa de suciedad, polvo, manchas y olores del interior del automóvil. `,
 			description2: `Esto incluye aspirar y cepillar a fondo las superficies, como alfombras, tapicería, paneles de puertas y salpicaderos, para eliminar la suciedad y los residuos. Además, se utilizan productos específicos para limpiar y desinfectar las superficies, eliminando manchas y olores no deseados.`,
 			description3: `Por último, aplicamos un acondicionador para proteger y revitalizar la tapicería y los materiales interiores, dejando el interior del vehículo limpio, fresco y como nuevo.`,
-			price: '$50.000',
+			price: '$85.000',
 		},
 		{
 			title: 'Limpieza de motor',
@@ -52,7 +52,7 @@ function OtherServices() {
 	};
 
 	return (
-		<div className="h-auto md:w-screen pb-16 ">
+		<div className="h-auto md:w-full pb-16 ">
 			<h1 className="text-4xl orbitron text-center pt-12 mb-6 font-light text-red-600">
 				Otros servicios
 			</h1>
@@ -69,7 +69,7 @@ function OtherServices() {
 						</CardHeader>
 						<Image
 							alt="Lavado premium"
-							className=" z-0 w-full h-full object-cover "
+							className=" z-0 w-screen h-full object-cover "
 							src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/lavadopremium.webp?alt=media&token=becb8bc0-0d3b-4cf6-83d2-c1be8a6d0143"
 						/>
 					</Card>
@@ -91,7 +91,6 @@ function OtherServices() {
 						/>
 					</Card>
 				</div>
-
 				<div
 					className="flex justify-center md:place-self-end hover:scale-[1.01] transition-all duration-400"
 					onClick={() => handleOnOpen(2)}
@@ -104,7 +103,7 @@ function OtherServices() {
 						</CardHeader>
 						<Image
 							alt="Limpieza de interior"
-							className="z-0 w-full h-full object-cover "
+							className=" z-0 w-screen h-full object-cover "
 							src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/limp_interior.webp?alt=media&token=c3c82eb2-4e09-4a8a-955b-e4811040d729"
 						/>
 					</Card>

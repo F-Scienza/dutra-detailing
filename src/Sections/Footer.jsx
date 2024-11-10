@@ -6,7 +6,7 @@ import { FaLocationDot } from 'react-icons/fa6';
 import { MdAccessTimeFilled } from 'react-icons/md';
 function Footer() {
 	return (
-		<div className="w-screen h-64 text-center flex flex-col md:flex-row justify-center items-center md:justify-evenly">
+		<div className="w-full h-64 text-center flex flex-col md:flex-row justify-center items-center md:justify-evenly">
 			<img
 				className="w-52 "
 				src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/Logohd.webp?alt=media&token=6f478de0-e8cb-48cb-996c-f9c4598a756b"

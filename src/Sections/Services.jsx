@@ -22,21 +22,30 @@ function Services() {
 			description: `El tratamiento cerámico es uno de los mejores servicios que brindamos.`,
 			description2: `Consiste en realizar una corrección de barniz full en donde eliminaremos hasta un 90% de imperfecciones. Aquí no solo mejora el nivel de corrección sino también mejora notablemente la protección, siendo ésta una capa líquida de recubrimiento de sílice sobre la pintura, lo cual protegerá a la misma de manchas, corrosión y daños causados por los rayos UV.`,
 			description3: `Ésta protección puede variar su duración entre 1, 2 y hasta 3 años dependiendo el sellador que elija el cliente. Cualquiera de éstas protecciones además de proteger a la pintura mejora el brillo y la profundidad del color dejando un acabado en su máximo nivel de brillo.`,
-			price: '$210.000',
+			priceMoto: '$60.000',
+			priceCarSm: '$280.000',
+			priceCarMd: '$355.000',
+			priceCarLg: '$420.000',
 		},
 		{
 			title: 'Tratamiento acrilico',
 			description: `En éste tratamiento realizamos una corrección de barniz intermedia en donde eliminamos entre un 50/60% de rayas circulares (las famosas telarañas que se ven con la luz del sol). `,
 			description2: `Ésto da como resultado una muy buena terminación y ayuda a incrementar el brillo notablemente. `,
 			description3: `Una vez terminada la corrección de barniz aplicaremos la protección, que proporciona una barrera protectora contra la suciedad, los rayos UV y aporta un plus de brillo, todo esto por hasta 6 meses.`,
-			price: '$135.000',
+			priceMoto: '$40.000',
+			priceCarSm: '$165.000',
+			priceCarMd: '$190.000',
+			priceCarLg: '$250.000',
 		},
 		{
 			title: 'Abrillantado',
 			description: `Este servicio es un proceso que incluye un pulido leve. `,
 			description2: `Eliminamos defectos superficiales y así incrementar el brillo del vehículo sin necesidad de realizar un trabajo profundo. `,
 			description3: `Este trabajo finaliza con la aplicación de una cera, lo que le dará al vehículo un plus de brillo y otorgará suavidad a la superficie. `,
-			price: '$74.000',
+			priceMoto: '- - - -',
+			priceCarSm: '$95.000',
+			priceCarMd: '$120.000',
+			priceCarLg: '$145.000',
 		},
 	];
 	const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
@@ -47,7 +56,7 @@ function Services() {
 	};
 
 	return (
-		<div className="text-justify md:w-screen">
+		<div className="text-justify md:w-full">
 			<h1 className="text-4xl orbitron text-center pt-12 mb-6 font-light text-red-600">
 				Servicios de pulido
 			</h1>
@@ -138,12 +147,33 @@ function Services() {
 						<p>{modalInfo.description2} </p>
 						<p>{modalInfo.description3} </p>
 						<Divider className="my-2" />
-						<div className="flex flex-col">
-							<p className="text-xs self-center opacity-90">Desde:</p>
-							<p className="self-center text-red-500 orbitron">
-								{modalInfo.price}
-							</p>
+						<div className="flex justify-between">
+							<div className="flex flex-col">
+								<p className="text-xs self-center opacity-90">Moto:</p>
+								<p className="self-center text-red-500 orbitron">
+									{modalInfo.priceMoto}
+								</p>
+							</div>
+							<div className="flex flex-col">
+								<p className="text-xs self-center opacity-90">Auto chico:</p>
+								<p className="self-center text-red-500 orbitron">
+									{modalInfo.priceCarSm}
+								</p>
+							</div>
+							<div className="flex flex-col">
+								<p className="text-xs self-center opacity-90">Auto grande:</p>
+								<p className="self-center text-red-500 orbitron">
+									{modalInfo.priceCarMd}
+								</p>
+							</div>
+							<div className="flex flex-col">
+								<p className="text-xs self-center opacity-90">Suv / pick-up:</p>
+								<p className="self-center text-red-500 orbitron">
+									{modalInfo.priceCarLg}
+								</p>
+							</div>
 						</div>
+
 						<p className="text-sm self-center">
 							{' '}
 							El costo del servicio varia segun el tamaño del vehiculo.
