@@ -37,7 +37,7 @@ function Carousel() {
 		<div className="orbitron text-center top-[-2rem] w-full h-[85vh] md:h-[95vh] relative flex justify-center items-center overflow-hidden ">
 			<div className="w-full h-screen absolute bg-gradient-to-t from-gray-900/80 via-black/5 to-black/0 z-10"></div>
 			<div className="absolute h-auto w-auto">
-				<Skeleton isLoaded={loaded} className="bg-black-800 ">
+				<Skeleton  isLoaded={loaded} className="bg-black-800 ">
 					<Image
 						className="hidden sm:block h-screen w-auto object-cover z-0 md:w-full md:object-cover lg:w-screen"
 						src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/inicio_desk.webp?alt=media&token=cffa3610-ad6f-4b5f-9704-7c81bd4586f7"
