@@ -20,28 +20,28 @@ function OtherServices() {
 			description: `El lavado premium es un servicio de limpieza de vehículos que va más allá del lavado básico. `,
 			description2: `Incluye un proceso detallado de lavado que utiliza técnicas y productos de alta calidad para eliminar la suciedad y el polvo, sin generar ningún tipo de daño sobre la carrocería, las llantas y otros componentes del vehículo. `,
 			description3: `Además del lavado exterior, un lavado premium incluye limpieza y acondicionado interior así como también la aplicación de cera o selladores para proteger la pintura o mantener los selladores en caso de haber sido tratado previamente.`,
-			price: '$12.000',
+			price: '$14.000',
 		},
 		{
 			title: 'Pulido de opticas',
 			description: ` Con el tiempo, los faros pueden volverse opacos, amarillentos o nublados por la exposición a los elementos, los rayos UV del sol y el desgaste general.`,
 			description2: `Esto no solo afecta la estética del automóvil, sino que también puede reducir la efectividad de los faros al dispersar la luz de manera desigual.`,
 			description3: `El pulido de ópticas aparte de mejorar la apariencia del vehículo, también mejora la seguridad al mejorar la visibilidad nocturna al conducir.`,
-			price: '$16.000 c/u',
+			price: '$18.000 c/u',
 		},
 		{
 			title: 'Limpieza de interior',
 			description: `El servicio de limpieza interior implica la eliminación meticulosa de suciedad, polvo, manchas y olores del interior del automóvil. `,
 			description2: `Esto incluye aspirar y cepillar a fondo las superficies, como alfombras, tapicería, paneles de puertas y salpicaderos, para eliminar la suciedad y los residuos. Además, se utilizan productos específicos para limpiar y desinfectar las superficies, eliminando manchas y olores no deseados.`,
 			description3: `Por último, aplicamos un acondicionador para proteger y revitalizar la tapicería y los materiales interiores, dejando el interior del vehículo limpio, fresco y como nuevo.`,
-			price: '$85.000',
+			price: '$95.000',
 		},
 		{
 			title: 'Limpieza de motor',
 			description: `La limpieza del motor es un proceso que implica eliminar la suciedad, el polvo, los residuos de aceite y otros desechos acumulados en el compartimiento del motor de un vehículo.`,
 			description2: `Este proceso no solo mejora la apariencia del motor, sino que también puede contribuir a su rendimiento y durabilidad a largo plazo. `,
 			description3: `Este trabajo se realiza con sumo cuidado y utilizando los productos y herramientas adecuados para evitar dañar los componentes del motor o causar problemas eléctricos. `,
-			price: '$15.000',
+			price: '$19.000',
 		},
 	];
 	const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
