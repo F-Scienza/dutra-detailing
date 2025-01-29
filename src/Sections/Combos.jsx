@@ -12,16 +12,16 @@ function Combos() {
 				/>
 				<div className="relative h-full w-full rounded-xl bg-gradient-to-t from-black/50 to-black/5 flex items-center md:rounded-xl">
 					<div className="absolute z-10 flex flex-col w-full">
-						<div className="flex flex-wrap justify-center items-center w-100 gap-1 pb-4">
+						<div className="flex flex-wrap justify-center items-center w-100 gap-4 pb-4">
 							<Chip
-								className="md:text-lg orbitron bg-white text-red-500 font-bold shadow-none"
+								className="text-lg md:text-xl orbitron bg-white text-red-500 font-bold shadow-none"
 								color="danger"
 								variant="shadow"
 							>
 								Tratamiento ceramico
 							</Chip>
 							<Chip
-								className="md:text-lg orbitron bg-white text-red-500 font-bold shadow-none"
+								className="text-lg md:text-xl orbitron bg-white text-red-500 font-bold shadow-none"
 								color="danger"
 								variant="shadow"
 							>
@@ -40,7 +40,7 @@ function Combos() {
 							automáticamente!
 						</h1>
 						<div className=" place-self-center">
-							<WhatsappButton/>
+							<WhatsappButton />
 						</div>
 					</div>
 				</div>
