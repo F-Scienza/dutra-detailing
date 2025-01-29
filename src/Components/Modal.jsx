@@ -6,20 +6,22 @@ export default function ModalButton() {
 
 	return (
 		<>
-			<Button
-				onClick={onOpen}
-				color="primary"
-				className="bg-red-600/90 font-bold w-32 md:w-40 place-self-center "
-			>
-				Solicitar turno
-			</Button>
+			<div className="md:w-66 p-0.5 animate-border inline-block rounded-xl bg-white bg-gradient-to-r from-red-500 via-black/40 to-pink-500 bg-[length:500%_400%]">
+				<Button
+					onClick={onOpen}
+					color="primary"
+					className=" bg-black md:text-xl font-bold w-32 md:w-64 place-self-center text-white"
+				>
+					Solicitar turno
+				</Button>
+			</div>
 
 			<Modal
 				isOpen={isOpen}
 				onOpenChange={onOpenChange}
 				placement="center"
 				hideCloseButton
-				className='w-11/12'
+				className="w-11/12"
 			>
 				<ModalContent>
 					{onClose => (
