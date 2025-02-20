@@ -8,9 +8,10 @@ import { DateStep } from './DateStep';
 import { MessageStep } from './MessageStep';
 import { CompleteStep } from './CompleteStep';
 import { useFormData } from '../StepFormContext';
+// import { sendWsp } from '../WhatsappUtils';
 
 function SteperModal() {
-	const { formData, sendEmail } = useFormData();
+	const { formData, sendWsp } = useFormData();
 
 	const steps = [
 		'Ingrese sus datos',
@@ -26,23 +27,43 @@ function SteperModal() {
 	const [btnText, setBtnText] = useState('Enviar');
 
 
-	const handleSendEmail = () => {
-		console.log(`send email con ${formData}`);
+	// const handleSendEmail = () => {
+	// 	console.log(`send email con ${formData}`);
+	// 	setLoad(true);
+	// 	setBtnText('');
+	// 	sendEmail(formData)
+	// 		.then(() => {
+	// 			setComplete(true);
+	// 			setLoad(false);
+	// 			setVisibilityButtons('hidden');
+	// 		})
+	// 		.catch(error => {
+	// 			// Manejar cualquier error que ocurra durante el envío del correo electrónico
+	// 			console.error('Error al enviar el correo electrónico:', error);
+	// 			setLoad(false);
+	// 			setBtnText('error');
+	// 		});
+	// };
+
+	const handleSendWsp = () => {
+		console.log(`send WhatsApp con ${formData}`);
 		setLoad(true);
 		setBtnText('');
-		sendEmail(formData)
+
+		sendWsp(formData)
 			.then(() => {
 				setComplete(true);
 				setLoad(false);
 				setVisibilityButtons('hidden');
 			})
 			.catch(error => {
-				// Manejar cualquier error que ocurra durante el envío del correo electrónico
-				console.error('Error al enviar el correo electrónico:', error);
+				console.error('Error al abrir WhatsApp:', error);
 				setLoad(false);
 				setBtnText('error');
 			});
 	};
+
+
 
 	return (
 		<div className="flex flex-col p-2">
@@ -79,7 +100,6 @@ function SteperModal() {
 			) : null}
 
 			<ModalFooter className="flex flex-col gap-1">
-				
 				<p className="text-center text-sm text-black/80 font-light mb-2">
 					Todos los turnos se reservan con seña, sin excepcion.
 				</p>
@@ -106,10 +126,12 @@ function SteperModal() {
 					{!complete && ( // si no esta completo pasa lo siguiente
 						<Button
 							isLoading={load}
-							className={`${visibilityButtons} bg-red-500 text-white font-bold w-24 place-self-end  `}
+							className={`${visibilityButtons} ${
+								currentStep === steps.length ? 'bg-whatsapp' : 'bg-red-500'
+							}  text-white font-bold w-24 place-self-end  `}
 							onClick={() => {
 								currentStep === steps.length // si es igual a la cantidad de pasos
-									? handleSendEmail(formData) // si se apritea se setea como completo
+									? handleSendWsp(formData) // si se apritea se setea como completo
 									: setCurrentStep(prev => prev + 1); // si no es igual aumenta uno
 							}}
 						>

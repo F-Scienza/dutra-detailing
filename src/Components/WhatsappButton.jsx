@@ -4,7 +4,7 @@ export default function WhatsappButton() {
 
 	const openInNewTab = ()=> {
 		console.log(' se apreto el boton ')
-		window.open('https://wa.link/kni2em', '_blank', 'noreferrer');
+		window.open('https://wa.link/f2hp6l', '_blank', 'noreferrer');
 	};
 
 	return (

@@ -10,7 +10,7 @@ function Combos() {
 					src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/imagen%20enero.webp?alt=media&token=0fc804cd-94b0-4c74-8fa3-3376644cc09e"
 					alt="carforsale"
 				/>
-				<div className="relative h-full w-full rounded-xl bg-gradient-to-t from-black/50 to-black/5 flex items-center md:rounded-xl">
+				<div className=" h-full w-full rounded-xl bg-gradient-to-t from-black/50 to-black/5 flex items-center md:rounded-xl">
 					<div className="absolute z-10 flex flex-col w-full">
 						<div className="flex flex-wrap justify-center items-center w-100 gap-4 pb-4">
 							<Chip
@@ -18,15 +18,15 @@ function Combos() {
 								color="danger"
 								variant="shadow"
 							>
-								Tratamiento ceramico
+								Contratando 2 o más de nuestros servicios
 							</Chip>
-							<Chip
+							{/* <Chip
 								className="text-lg md:text-xl orbitron bg-white text-red-500 font-bold shadow-none"
 								color="danger"
 								variant="shadow"
 							>
 								Tratamiento acrílico
-							</Chip>
+							</Chip> */}
 							{/* <Chip
 								className="md:text-lg orbitron bg-white text-red-500 font-bold shadow-none"
 								color="danger"
@@ -35,17 +35,21 @@ function Combos() {
 								Abrillantado
 							</Chip> */}
 						</div>
-						<h1 className="orbitron text-2xl md:text-3xl lg:text-4xl text-center mb-4 md:mb-6">
-							Solicitá turno desde éste botón y accede al beneficio
-							automáticamente!
+						<h1 className="orbitron text-2xl md:text-2xl lg:text-3xl text-center mb-4 md:mb-6">
+							Tu primera experiencia con nosotros amerita un ragalo de
+							bienvenida!
 						</h1>
+
+						<div className="place-self-center bg-red-500 text-white w-40 h-12 lg:h-16 mb-4 md:mb-6 rounded-2xl  text-center items-center flex justify-center  shadow-black shadow-sm">
+							<span className="orbitron text-2xl md:text-2xl lg:text-3xl">
+								{' '}
+								15% off
+							</span>
+						</div>
 						<div className=" place-self-center">
 							<WhatsappButton />
 						</div>
 					</div>
-				</div>
-				<div className="bg-white text-red-500 w-40 h-12 lg:h-16 rounded-l-2xl absolute text-center items-center flex justify-center top-12 right-0 shadow-black shadow-sm">
-					<span className="archivo-black text-2xl"> 10% off</span>
 				</div>
 			</div>
 		</div>

@@ -7,7 +7,7 @@ function DateStep() {
 	const { formData ,updateFormData } = useFormData();
 
 	const handleChange = minValue => {
-		const fechas = `Desde el ${minValue.start.day}/${minValue.start.month} al ${minValue.end.day}/${minValue.end.month}`;
+		const fechas = `entre el ${minValue.start.day}/${minValue.start.month} al ${minValue.end.day}/${minValue.end.month}`;
 		updateFormData("parsedDates", fechas);
 		updateFormData("dates", minValue)
 	};
