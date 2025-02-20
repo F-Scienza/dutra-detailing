@@ -13,7 +13,7 @@ export default function WhatsappButton() {
 				<Button
 					onClick={openInNewTab}
 					color="primary"
-					className="bg-black font-bold md:text-xl w-40 md:w-64 place-self-center text-white"
+					className=" bg-black font-bold text-sm md:text-xl w-40 md:w-64 place-self-center text-white"
 				>
 					Acceder al beneficio
 				</Button>

@@ -14,11 +14,11 @@ function Combos() {
 					<div className="absolute z-10 flex flex-col w-full">
 						<div className="flex flex-wrap justify-center items-center w-100 gap-4 pb-4">
 							<Chip
-								className="text-lg md:text-xl orbitron bg-white text-red-500 font-bold shadow-none"
+								className="text-md md:text-xl orbitron bg-white text-red-500 font-bold shadow-none"
 								color="danger"
 								variant="shadow"
 							>
-								Contratando 2 o más de nuestros servicios
+								Contrata 2 o más de nuestros servicios
 							</Chip>
 							{/* <Chip
 								className="text-lg md:text-xl orbitron bg-white text-red-500 font-bold shadow-none"
@@ -35,13 +35,12 @@ function Combos() {
 								Abrillantado
 							</Chip> */}
 						</div>
-						<h1 className="orbitron text-2xl md:text-2xl lg:text-3xl text-center mb-4 md:mb-6">
-							Tu primera experiencia con nosotros amerita un ragalo de
-							bienvenida!
+						<h1 className="orbitron text-lg md:text-2xl lg:text-3xl text-center mb-4 md:mb-6">
+							Tu primera experiencia con nosotros amerita un ragalo de bienvenida!
 						</h1>
 
 						<div className="place-self-center bg-red-500 text-white w-40 h-12 lg:h-16 mb-4 md:mb-6 rounded-2xl  text-center items-center flex justify-center  shadow-black shadow-sm">
-							<span className="orbitron text-2xl md:text-2xl lg:text-3xl">
+							<span className="orbitron text-lg md:text-xl lg:text-2xl">
 								{' '}
 								15% off
 							</span>
