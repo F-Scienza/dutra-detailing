@@ -15,24 +15,24 @@ function ServicesStep() {
 				value={formData.services}
 				onValueChange={handleCheckboxGroupChange} // Función que maneja los cambios
 			>
-				<Checkbox value={` - *Tratamiento Cerámico*`}>
+				<Checkbox value={`_Tratamiento Cerámico_`}>
 					Tratamiento Cerámico
 				</Checkbox>
-				<Checkbox value={` - *Abrillantado*`}>Abrillantado</Checkbox>
-				<Checkbox value={` - *Tratamiento Acrílico*`}>
+				<Checkbox value={`_Abrillantado_`}>Abrillantado</Checkbox>
+				<Checkbox value={`_Tratamiento Acrílico_`}>
 					Tratamiento Acrílico
 				</Checkbox>
-				<Checkbox value={` - *Lavado premium*`}>Lavado premium</Checkbox>
-				<Checkbox value={` - *Limpieza de interior*`}>
+				<Checkbox value={`_Lavado premium_`}>Lavado premium</Checkbox>
+				<Checkbox value={`_Limpieza de interior_`}>
 					Limpieza de interior
 				</Checkbox>
-				<Checkbox value={` - *Limpieza de motor*`}>Limpieza de motor</Checkbox>
-				<Checkbox value={` - *Pulido de opticas*`}>Pulido de ópticas</Checkbox>
-				<Checkbox value={` - *Preparacion para la venta*`}>
+				<Checkbox value={`_Limpieza de motor_`}>Limpieza de motor</Checkbox>
+				<Checkbox value={`_Pulido de opticas_`}>Pulido de ópticas</Checkbox>
+				<Checkbox value={`_Preparacion para la venta_`}>
 					Preparacion para la venta{' '}
 					{/* <span className="font-semibold text-red-500"> -15% </span> */}
 				</Checkbox>
-				<Checkbox value={` - *Otros*`}>Otros</Checkbox>
+				<Checkbox value={`_Otros_`}>Otros</Checkbox>
 			</CheckboxGroup>
 		</ModalBody>
 	);
