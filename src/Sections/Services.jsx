@@ -22,20 +22,20 @@ function Services() {
 			description: `El tratamiento cerámico es uno de los mejores servicios que brindamos.`,
 			description2: `Consiste en realizar una corrección de barniz full en donde eliminaremos hasta un 90% de imperfecciones. Aquí no solo mejora el nivel de corrección sino también mejora notablemente la protección, siendo ésta una capa líquida de recubrimiento de sílice sobre la pintura, lo cual protegerá a la misma de manchas, corrosión y daños causados por los rayos UV.`,
 			description3: `Ésta protección puede variar su duración entre 1, 2 y hasta 3 años dependiendo el sellador que elija el cliente. Cualquiera de éstas protecciones además de proteger a la pintura mejora el brillo y la profundidad del color dejando un acabado en su máximo nivel de brillo.`,
-			priceMoto: '$80.000',
-			priceCarSm: '$290.000',
-			priceCarMd: '$360.000',
-			priceCarLg: '$435.000',
+			priceMoto: '$110.000',
+			priceCarSm: '$350.000',
+			priceCarMd: '$420.000',
+			priceCarLg: '$500.000',
 		},
 		{
 			title: 'Tratamiento acrilico',
 			description: `En éste tratamiento realizamos una corrección de barniz intermedia en donde eliminamos entre un 50/60% de rayas circulares (las famosas telarañas que se ven con la luz del sol). `,
 			description2: `Ésto da como resultado una muy buena terminación y ayuda a incrementar el brillo notablemente. `,
 			description3: `Una vez terminada la corrección de barniz aplicaremos la protección, que proporciona una barrera protectora contra la suciedad, los rayos UV y aporta un plus de brillo, todo esto por hasta 6 meses.`,
-			priceMoto: '$50.000',
-			priceCarSm: '$180.000',
-			priceCarMd: '$220.000',
-			priceCarLg: '$290.000',
+			priceMoto: '$90.000',
+			priceCarSm: '$230.000',
+			priceCarMd: '$270.000',
+			priceCarLg: '$360.000',
 		},
 		{
 			title: 'Abrillantado',
@@ -43,9 +43,9 @@ function Services() {
 			description2: `Eliminamos defectos superficiales y así incrementar el brillo del vehículo sin necesidad de realizar un trabajo profundo. `,
 			description3: `Este trabajo finaliza con la aplicación de una cera, lo que le dará al vehículo un plus de brillo y otorgará suavidad a la superficie. `,
 			priceMoto: '- - - -',
-			priceCarSm: '$100.000',
-			priceCarMd: '$135.000',
-			priceCarLg: '$170.000',
+			priceCarSm: '$140.000',
+			priceCarMd: '$170.000',
+			priceCarLg: '$360.000',
 		},
 	];
 	const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
@@ -78,7 +78,7 @@ function Services() {
 								isZoomed
 								alt="Tratamiento ceramico"
 								className="h-80 object-cover rounded-xl"
-								src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/tratceramico.webp?alt=media&token=99a1fe39-40e8-460b-bd26-2818ba58c99c"
+								src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/julio-tratamiento-ceramico.webp?alt=media&token=d6889488-3814-4fd9-8b84-b2627b64f6b3"
 								width={290}
 							/>
 						</CardBody>
@@ -101,7 +101,7 @@ function Services() {
 								isZoomed
 								alt="Tratamiento acrilico"
 								className="h-80 object-cover rounded-xl"
-								src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/tratacrilico.webp?alt=media&token=89ed9bff-a0df-4e9c-a268-da1ba32674bb"
+								src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/julio-tratamiento-acrilico.webp?alt=media&token=4c258c20-c770-40c3-9946-315e6d437826"
 								width={290}
 							/>
 						</CardBody>
@@ -122,7 +122,7 @@ function Services() {
 								isZoomed
 								alt="Abrillantado Pulido"
 								className="h-80 object-cover rounded-xl"
-								src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/abrillantado.webp?alt=media&token=6b6037c3-61bf-4af4-8fb5-de451903c456"
+								src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/julio-abrillantado.webp?alt=media&token=581c5347-4e9b-437e-987e-2a09c81903d2"
 								width={290}
 							/>
 						</CardBody>

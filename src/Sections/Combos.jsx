@@ -7,7 +7,7 @@ function Combos() {
 			<div className="items-center w-11/12 sm:w-[620px] lg:w-[980px] h-[670px]  rounded-xl relative  cursor-pointer">
 				<img
 					className="h-full  sm:w-full object-cover absolute right-0 sm:inset-0 bottom-0 z-0 rounded-xl opacity-80 shadow-gradient"
-					src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/imagen%20enero.webp?alt=media&token=0fc804cd-94b0-4c74-8fa3-3376644cc09e"
+					src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/15off.webp?alt=media&token=d12924d2-843b-4315-aa28-fc274016a984"
 					alt="carforsale"
 				/>
 				<div className=" h-full w-full rounded-xl bg-gradient-to-t from-black/50 to-black/5 flex items-center md:rounded-xl">
