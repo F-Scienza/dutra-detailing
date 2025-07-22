@@ -45,7 +45,7 @@ function Services() {
 			priceMoto: '- - - -',
 			priceCarSm: '$140.000',
 			priceCarMd: '$170.000',
-			priceCarLg: '$360.000',
+			priceCarLg: '$220.000',
 		},
 	];
 	const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
