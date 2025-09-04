@@ -40,13 +40,15 @@ function Carousel() {
 				<Skeleton isLoaded={loaded} className="bg-black-800 ">
 					<Image
 						className="hidden sm:block h-screen w-auto object-cover z-0 md:w-full md:object-cover lg:w-screen"
-						src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/iniciopromocional.webp?alt=media&token=32d1badc-cd13-4511-958d-96701d1977c6"
+						src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/inicio_desk.webp?alt=media&token=cffa3610-ad6f-4b5f-9704-7c81bd4586f7"
+						
 						alt="estetica vehicular"
 						onLoad={handleImageLoad}
 					/>
 					<Image
 						className="block sm:hidden  h-screen object-cover z-0 w-full md:w-screen md:object-cover"
-						src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/portada.webp?alt=media&token=789b1e68-b78e-4b06-ba5d-7f894d7f31f2"
+						src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/iniciopromocional.webp?alt=media&token=32d1badc-cd13-4511-958d-96701d1977c6"
+						
 						alt="Car detail"
 						onLoad={handleImageLoad}
 					/>
