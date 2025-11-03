@@ -47,7 +47,7 @@ function Carousel() {
 					/>
 					<Image
 						className="block sm:hidden  h-screen object-cover z-0 w-full md:w-screen md:object-cover"
-						src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/iniciopromocional.webp?alt=media&token=32d1badc-cd13-4511-958d-96701d1977c6"
+						src="https://firebasestorage.googleapis.com/v0/b/dutradetailing.appspot.com/o/portadamobile.webp?alt=media&token=8cdeecbb-20d5-4127-a949-2e5da26d7080"
 						
 						alt="Car detail"
 						onLoad={handleImageLoad}
@@ -55,7 +55,7 @@ function Carousel() {
 				</Skeleton>
 			</div>
 
-			<motion.div
+		<motion.div
 				key={currentTreatmentIndex}
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
@@ -64,7 +64,7 @@ function Carousel() {
 				className="top-[-3rem] text-4xl md:text-6xl font-semibold md:font-bold text-white z-20"
 			>
 				{tratamientos[currentTreatmentIndex]}
-			</motion.div>
+			</motion.div> 
 		</div>
 	);
 }
