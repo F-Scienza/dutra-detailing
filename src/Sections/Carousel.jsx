@@ -55,7 +55,7 @@ function Carousel() {
 				</Skeleton>
 			</div>
 
-{/* 			<motion.div
+			<motion.div
 				key={currentTreatmentIndex}
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
@@ -64,7 +64,7 @@ function Carousel() {
 				className="top-[-3rem] text-4xl md:text-6xl font-semibold md:font-bold text-white z-20"
 			>
 				{tratamientos[currentTreatmentIndex]}
-			</motion.div> */}
+			</motion.div>
 		</div>
 	);
 }
